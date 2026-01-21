@@ -1,0 +1,3 @@
+<a href="/robots.txt">Temporary Redirect</a>.
+
+<!-- Powered by Staatic (https://staatic.com/) -->
