@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" >
+
+<channel>
+	<title>bash &#8211; Easter&#039;s Domo</title>
+	<atom:link href="https://domo.easter.fr/category/bash/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Fri, 30 Nov 2018 13:35:05 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>Vigicrue et Domoticz</title>
+		<link>https://domo.easter.fr/2017/02/09/vigicrue-et-domoticz/</link>
+					<comments>https://domo.easter.fr/2017/02/09/vigicrue-et-domoticz/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2017 09:44:53 +0000</pubDate>
+				<category><![CDATA[bash]]></category>
+		<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[Vigicrue]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=6</guid>
+
+					<description><![CDATA[/!\ Le site Vigicrue a changé, il faut maintenant utiliser le script v2 de Vigicrue ici. Ou la v3 ici. Comment remonter dans Domoticz la hauteur d&#8217;eau ainsi que le débit d&#8217;un cours d&#8217;eau depuis le site Vigicrues. Dans un premier temps, il faut créer un Hardware virtuel. Pour ce faire, il faut se rendre dans [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>/!\ Le site Vigicrue a changé, il faut maintenant utiliser le script<a href="https://domo.easter.fr/2017/12/11/vigicrue-v2/"> v2 de Vigicrue ici</a>. Ou la v3 <a href="https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/">ici</a>.</p>
+<p>Comment remonter dans Domoticz la hauteur d&rsquo;eau ainsi que le débit d&rsquo;un cours d&rsquo;eau depuis le site <a href="https://www.vigicrues.gouv.fr/">Vigicrues</a>.</p>
+<p><img fetchpriority="high" decoding="async" class="wp-image-9 aligncenter" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png" width="602" height="111" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png 983w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-300x55.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-768x141.png 768w" sizes="(max-width: 602px) 100vw, 602px" /></p>
+<p><img decoding="async" class="wp-image-12 size-large aligncenter" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture1-1024x605.png" width="600" height="354" /></p>
+<p>Dans un premier temps, il faut créer un Hardware virtuel.</p>
+<p>Pour ce faire, il faut se rendre dans Setup -&gt; Hardware.</p>
+<p>Puis ajouter un hardware de type « Dummy » :<img decoding="async" class="aligncenter wp-image-20 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy-1.png" width="941" height="253" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy-1.png 941w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy-1-300x81.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy-1-768x206.png 768w" sizes="(max-width: 941px) 100vw, 941px" /><br />
+Puis créer deux sensors en cliquant sur Create Virtual Sensors :<img decoding="async" class="wp-image-21 aligncenter" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi.png" width="690" height="23" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi.png 1461w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi-300x10.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi-768x25.png 768w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi-1024x34.png 1024w" sizes="(max-width: 690px) 100vw, 690px" />Le premier pour la hauteur d&rsquo;eau et le deuxième pour le débit d&rsquo;eau :<img decoding="async" class="alignnone size-medium wp-image-22" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_debeau-300x175.png" alt="" width="300" height="175" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_debeau-300x175.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_debeau.png 532w" sizes="(max-width: 300px) 100vw, 300px" /> <img decoding="async" class="alignnone size-medium wp-image-23" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_niveau-300x175.png" alt="" width="300" height="175" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_niveau-300x175.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_niveau.png 528w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Ensuite il faut aller dans Setup -&gt; Devices pour récupérer les idx des deux sensors virtuels créer précédemment et les noter dans un coin (ici 215 et 216) :<img decoding="async" class="alignright wp-image-24 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx.png" width="1156" height="101" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx.png 1156w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx-300x26.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx-768x67.png 768w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx-1024x89.png 1024w" sizes="(max-width: 1156px) 100vw, 1156px" /></p>
+<p>Avant de se lancer dans la création du script qui va récupérer les valeurs et mettre à jour Domoticz, il faut récupérer les infos sur la station voulu.</p>
+<p>Pour cela, un petit tour sur le site Vigicrues : <a href="https://www.vigicrues.gouv.fr/">https://www.vigicrues.gouv.fr/</a></p>
+<p>Un petit clique sur la carte à l’endroit voulu pour zoomer  :</p>
+<p><img decoding="async" class="alignnone size-medium wp-image-30" src="https://domo.easter.fr/wp-content/uploads/2017/02/carte_vigi-300x300.png" alt="" width="300" height="300" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/carte_vigi-300x300.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/carte_vigi-150x150.png 150w, https://domo.easter.fr/wp-content/uploads/2017/02/carte_vigi.png 683w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Et cliquer sur la station voulu :</p>
+<p><img decoding="async" class="alignnone size-medium wp-image-31" src="https://domo.easter.fr/wp-content/uploads/2017/02/vigi_detail-300x235.png" alt="" width="300" height="235" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/vigi_detail-300x235.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/vigi_detail.png 477w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Il faut récupérer l&rsquo;id de la station dans l&rsquo;url (ici <strong>W141001001</strong>) :<img decoding="async" class="alignnone wp-image-32 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/url_vigi.png" width="756" height="49" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/url_vigi.png 756w, https://domo.easter.fr/wp-content/uploads/2017/02/url_vigi-300x19.png 300w" sizes="(max-width: 756px) 100vw, 756px" /></p>
+<p>Vous devez maintenant créer sur votre serveur un script bash pour récupérer les infos puis mettre à jour Domoticz.</p>
+<p>[pastacode lang= »bash » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrues.sh » revision= »master » highlight= » » lines= » » provider= »github »/]</p>
+<p>On remplace l&rsquo;adresse du serveur Domoticz, l&rsquo;id de la station ainsi que les idx des deux sensors virtuels et hop le tour est joué.</p>
+<p>Et hop, on l&rsquo;ajoute dans la crontab pour qu&rsquo;il soit lancé régulièrement.</p>
+<p>Personnellement il tourne toutes les demi-heures, à XXh01 et XXh31.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/02/09/vigicrue-et-domoticz/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:59:19 by W3 Total Cache
+-->

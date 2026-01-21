@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" >
+
+<channel>
+	<title>notification &#8211; Easter&#039;s Domo</title>
+	<atom:link href="https://domo.easter.fr/category/notification/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Fri, 30 Nov 2018 13:33:56 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>Vigicrue v3 beta</title>
+		<link>https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/</link>
+					<comments>https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 12 Jan 2018 22:40:04 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[notification]]></category>
+		<category><![CDATA[Vigicrue]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=143</guid>
+
+					<description><![CDATA[Voici une nouvelle version pour le script Vigicrue. Suite à une demande de balajol sur le forum d&#8217;easydomoticz, j&#8217;ai rajouter la possibilité d&#8217;être notifié. J&#8217;ai fait le test de mettre une notification sur le sensor Domoticz et ça ne semble pas fonctionner. Du coup je l&#8217;ai ajouté dans le script, j&#8217;ai modifié la façon de [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img fetchpriority="high" decoding="async" class="alignnone wp-image-9 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png" alt="" width="983" height="181" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png 983w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-300x55.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-768x141.png 768w" sizes="(max-width: 983px) 100vw, 983px" /></p>
+<p>Voici une nouvelle version pour le script Vigicrue.</p>
+<p>Suite à une demande de <a href="http://easydomoticz.com/forum/memberlist.php?mode=viewprofile&amp;u=794">balajol</a> sur le forum d&rsquo;<a href="http://easydomoticz.com/forum/viewtopic.php?f=17&amp;t=5484&amp;start=10#p46650">easydomoticz</a>, j&rsquo;ai rajouter la possibilité d&rsquo;être notifié.</p>
+<p>J&rsquo;ai fait le test de mettre une notification sur le sensor Domoticz et ça ne semble pas fonctionner.</p>
+<p>Du coup je l&rsquo;ai ajouté dans le script, j&rsquo;ai modifié la façon de le configurer aussi.</p>
+<p>Dans un premier temps, il faut construire le fichier de configuration au format json.</p>
+<p>J&rsquo;ai mis sur github trois fichiers de conf différents pour le moment, <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/vigicrue/conf_samples/vigicrue_1_station.json">un pour une station</a>, <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/vigicrue/conf_samples/vigicrue_2_station.json">un pour deux stations</a> et <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/vigicrue/conf_samples/vigicrue_3_station.json">pour trois stations</a>.</p>
+<p>Si vous voulez une exemple de fichier de conf pour plus de deux stations, je peux vous le faire, demandez moi.</p>
+<p>&nbsp;</p>
+<p>Voici à quoi un fichier de configuration ressemble (je pars sur le deux stations comme c&rsquo;est celui que j&rsquo;utilise) :</p>
+<p>[pastacode lang= »markup » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue/conf_samples/vigicrue_2_station.json » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Il faut mettre le fichier de conf a un endroit accessible par Domoticz, je l&rsquo;ai mis dans <strong>/opt/domoticz/scripts</strong> mais vous pouvez le mettre ailleurs du moment que Domoticz a les droits pour le lire.</p>
+<p>Une précision, dans la partie notification, la valeur <strong>test</strong> ne sert à rien pour l&rsquo;instant mais je compte l&rsquo;utiliser pour choisir le mode de test, plus grand que, plus grand ou equal, plus petit, etc &#8230;</p>
+<p>Dites moi si c&rsquo;est pertinant ou si le plus grand que suffit.</p>
+<p>Dans notification, <strong>value</strong> permet de définir le seuil, par exemple si le niveau d&rsquo;eau dépasse 2 métres ou 500 m3/s et <strong>active</strong> pour activer ou non la notification (true ou false).</p>
+<p>&nbsp;</p>
+<p>Voici le script lua, catégorie lua -&gt; time :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue/vigicrue.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Les modifications a apporter au script sont les quatre premières variables, à savoir :</p>
+<p><strong>debug</strong> : Pour activer le mode debug qui affiche plus d&rsquo;info (pas encore optimisé pour la v3)</p>
+<p><strong>config</strong> : Emplacement de votre fichier json de configuration</p>
+<p><strong>json</strong> : Emplacement de votre fichier JSON.lua</p>
+<p><strong>curl</strong> : Chemin complet vers votre binaire curl</p>
+<p>&nbsp;</p>
+<p>Pour le moment il faut modifier les commandes de notification manuellement :</p>
+<p>[pastacode lang= »c » manual= »commandArray%5B&rsquo;SendNotification&rsquo;%5D%3D&rsquo;Water%20level%20is%20high%20for%20station%20&prime;..StationName..&rsquo;%23Current%20level%20is%20&prime;..ResultHeight%5B%23ResultHeight%5D%5B2%5D..&rsquo;m%20for%20&prime;..StationName..&rsquo;%230%23sound%23extradata%23telegram&rsquo;%0AcommandArray%5B&rsquo;SendNotification&rsquo;%5D%3D&rsquo;Water%20speed%20level%20is%20high%20for%20station%20&prime;..StationName..&rsquo;%23Current%20speed%20level%3A%20&prime;..ResultSpeed%5B%23ResultSpeed%5D%5B2%5D..&rsquo;m3%2Fs%20for%20&prime;..StationName..&rsquo;%230%23sound%23extradata%23telegram' » message= » » highlight= » » provider= »manual »/]</p>
+<p>Pour définir le type de notification, ici j&rsquo;utilise telegram.</p>
+<p>Mais je compte rajouter ça dans le fichier de conf prochainement.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/feed/</wfw:commentRss>
+			<slash:comments>17</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Notification Telegram native</title>
+		<link>https://domo.easter.fr/2017/11/27/notification-telegram-native/</link>
+					<comments>https://domo.easter.fr/2017/11/27/notification-telegram-native/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 27 Nov 2017 21:21:26 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[notification]]></category>
+		<category><![CDATA[telegram]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=103</guid>
+
+					<description><![CDATA[Juste une petite info pour signaler que depuis le 21 octobre, il existe la possibilité d&#8217;utiliser les notifications Telegram en natif dans Domoticz. Plus besoin de passer par la notification http. En fait les notifications ont été intégrés à la bêta le 13 octobre mais je me suis planté dans la disposition de la configuration [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="alignnone wp-image-106 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/11/telegram_app-tips-tricks.jpg" alt="" width="468" height="293" srcset="https://domo.easter.fr/wp-content/uploads/2017/11/telegram_app-tips-tricks.jpg 468w, https://domo.easter.fr/wp-content/uploads/2017/11/telegram_app-tips-tricks-300x188.jpg 300w" sizes="(max-width: 468px) 100vw, 468px" /></p>
+<p>Juste une petite info pour signaler que depuis le 21 octobre, il existe la possibilité d&rsquo;utiliser les notifications Telegram en natif dans Domoticz.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-107" src="https://domo.easter.fr/wp-content/uploads/2017/11/telegram.png" alt="" width="579" height="191" srcset="https://domo.easter.fr/wp-content/uploads/2017/11/telegram.png 579w, https://domo.easter.fr/wp-content/uploads/2017/11/telegram-300x99.png 300w" sizes="(max-width: 579px) 100vw, 579px" /></p>
+<p>Plus besoin de passer par la notification http.<br />
+En fait les notifications ont été <a href="https://github.com/domoticz/domoticz/pull/1857">intégrés à la bêta le 13 octobre</a> mais je me suis planté dans la disposition de la configuration des notifications Telegram &#8230; Du coup il a fallut attendre l&rsquo;intégration de ma seconde <a href="https://github.com/domoticz/domoticz/pull/1876">pull request</a> pour régler ça et pouvoir les utiliser.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/11/27/notification-telegram-native/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:57:45 by W3 Total Cache
+-->

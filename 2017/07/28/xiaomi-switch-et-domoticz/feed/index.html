@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" 
+	>
+<channel>
+	<title>
+	Commentaires sur : Xiaomi switch et Domoticz	</title>
+	<atom:link href="https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Mon, 05 Feb 2018 09:52:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>
+		Par : Jerome		</title>
+		<link>https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comment-42</link>
+
+		<dc:creator><![CDATA[Jerome]]></dc:creator>
+		<pubDate>Mon, 05 Feb 2018 09:52:36 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=76#comment-42</guid>
+
+					<description><![CDATA[Non, je vais retester.
+
+Merci :)]]></description>
+			<content:encoded><![CDATA[<p>Non, je vais retester.</p>
+<p>Merci 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : simon		</title>
+		<link>https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comment-41</link>
+
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 05 Feb 2018 00:15:38 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=76#comment-41</guid>
+
+					<description><![CDATA[En réponse à &lt;a href=&quot;https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comment-40&quot;&gt;Jerome&lt;/a&gt;.
+
+As tu bien définis le script comme étant de type lua -&gt; Device ?
+Dans la partie en haut à droite de l&#039;éditeur de script.]]></description>
+			<content:encoded><![CDATA[<p>En réponse à <a href="https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comment-40">Jerome</a>.</p>
+<p>As tu bien définis le script comme étant de type lua -> Device ?<br />
+Dans la partie en haut à droite de l&rsquo;éditeur de script.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : Jerome		</title>
+		<link>https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comment-40</link>
+
+		<dc:creator><![CDATA[Jerome]]></dc:creator>
+		<pubDate>Sun, 04 Feb 2018 08:49:34 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=76#comment-40</guid>
+
+					<description><![CDATA[Bonjour,
+
+j&#039;ai essayé de rependre ton script (je n&#039;y connais rien) pour allumer et éteindre une ampoule Yeelight avec un switch Aqara. 
+Seul hic, il ne se passe rien quand je click. ai je fait une erreur ?
+Voici le code :
+
+— Bouton physique lumière couloir
+
+commandArray = {}
+
+— Allumer couloir
+
+if (devicechanged[‘Switch_couloir_haut’] == ‘Click’ and otherdevices[‘YeeLight_couloir_haut’] == ‘Off’) then
+print(“Allumage couloir haut par bouton physique”)
+commandArray[‘Switch_couloir_haut’]=’Off’
+commandArray[1]={[‘YeeLight_couloir_haut’]=’On’}
+end
+
+if (devicechanged[‘Switch_couloir_haut’] == ‘Click’ and otherdevices[‘YeeLight_couloir_haut’] == ‘On’) then
+print(“Extinction couloir haut par bouton physique”)
+commandArray[‘Switch_couloir_haut’]=’Off’
+commandArray[1]={[‘YeeLight_couloir_haut’]=’Off’}
+end
+
+return commandArray]]></description>
+			<content:encoded><![CDATA[<p>Bonjour,</p>
+<p>j&rsquo;ai essayé de rependre ton script (je n&rsquo;y connais rien) pour allumer et éteindre une ampoule Yeelight avec un switch Aqara.<br />
+Seul hic, il ne se passe rien quand je click. ai je fait une erreur ?<br />
+Voici le code :</p>
+<p>— Bouton physique lumière couloir</p>
+<p>commandArray = {}</p>
+<p>— Allumer couloir</p>
+<p>if (devicechanged[‘Switch_couloir_haut’] == ‘Click’ and otherdevices[‘YeeLight_couloir_haut’] == ‘Off’) then<br />
+print(“Allumage couloir haut par bouton physique”)<br />
+commandArray[‘Switch_couloir_haut’]=’Off’<br />
+commandArray[1]={[‘YeeLight_couloir_haut’]=’On’}<br />
+end</p>
+<p>if (devicechanged[‘Switch_couloir_haut’] == ‘Click’ and otherdevices[‘YeeLight_couloir_haut’] == ‘On’) then<br />
+print(“Extinction couloir haut par bouton physique”)<br />
+commandArray[‘Switch_couloir_haut’]=’Off’<br />
+commandArray[1]={[‘YeeLight_couloir_haut’]=’Off’}<br />
+end</p>
+<p>return commandArray</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : simon		</title>
+		<link>https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comment-17</link>
+
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Tue, 12 Dec 2017 15:09:57 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=76#comment-17</guid>
+
+					<description><![CDATA[En réponse à &lt;a href=&quot;https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comment-16&quot;&gt;tomaprice&lt;/a&gt;.
+
+Merci pour ton script ! :)]]></description>
+			<content:encoded><![CDATA[<p>En réponse à <a href="https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comment-16">tomaprice</a>.</p>
+<p>Merci pour ton script ! 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : tomaprice		</title>
+		<link>https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comment-16</link>
+
+		<dc:creator><![CDATA[tomaprice]]></dc:creator>
+		<pubDate>Tue, 12 Dec 2017 13:49:46 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=76#comment-16</guid>
+
+					<description><![CDATA[Merci pour ce script qui m&#039;a permis de gérer mon bouton rond xiaomi et l&#039;état ON/OFF avec le click tout en gardant le double click pour une autre action.
+Je partage le script retouché :
+-- Bouton physique d&#039;activation de l&#039;alarme
+
+commandArray = {}
+
+-- Alarme totale
+
+    if (devicechanged[&#039;Xiaomi_Bouton&#039;] == &#039;Click&#039; and otherdevices[&#039;Alarme_out&#039;] == &#039;Off&#039;) then
+        print(&quot;Activation alarme out par bouton physique&quot;)
+        commandArray[&#039;Xiaomi_Bouton&#039;]=&#039;Off&#039;
+        commandArray[1]={[&#039;Alarme_out&#039;]=&#039;On&#039;}
+    end
+
+    if (devicechanged[&#039;Xiaomi_Bouton&#039;] == &#039;Click&#039; and otherdevices[&#039;Alarme_out&#039;] == &#039;On&#039;) then
+        print(&quot;Désactivation alarme out par bouton physique&quot;)
+        commandArray[&#039;Xiaomi_Bouton&#039;]=&#039;Off&#039;
+        commandArray[1]={[&#039;Alarme_out&#039;]=&#039;Off&#039;}
+    end
+
+    if (devicechanged[&#039;Xiaomi_Bouton&#039;] == &#039;Click&#039; and otherdevices[&#039;Alarme_in&#039;] == &#039;On&#039;) then
+        print(&quot;Désactivation alarme out par bouton physique&quot;)
+        commandArray[&#039;Xiaomi_Bouton&#039;]=&#039;Off&#039;
+        commandArray[1]={[&#039;Alarme_out&#039;]=&#039;On&#039;}
+        commandArray[2]={[&#039;Alarme_in&#039;]=&#039;Off&#039;}
+    end
+
+-- Alarme partielle
+
+    if (devicechanged[&#039;Xiaomi_Bouton&#039;] == &#039;Double Click&#039; and otherdevices[&#039;Alarme_in&#039;] == &#039;Off&#039;) then
+        print(&quot;Activation alarme in par bouton physique&quot;)
+        commandArray[&#039;Xiaomi_Bouton&#039;]=&#039;Off&#039;
+        commandArray[1]={[&#039;Alarme_in&#039;]=&#039;On&#039;}
+    end
+
+    if (devicechanged[&#039;Xiaomi_Bouton&#039;] == &#039;Double Click&#039; and otherdevices[&#039;Alarme_in&#039;] == &#039;On&#039;) then
+        print(&quot;Activation alarme in par bouton physique&quot;)
+        commandArray[&#039;Xiaomi_Bouton&#039;]=&#039;Off&#039;
+        commandArray[1]={[&#039;Alarme_in&#039;]=&#039;Off&#039;}
+    end
+
+    if (devicechanged[&#039;Xiaomi_Bouton&#039;] == &#039;Double Click&#039; and otherdevices[&#039;Alarme_out&#039;] == &#039;On&#039;) then
+        print(&quot;Activation alarme in par bouton physique&quot;)
+        commandArray[&#039;Xiaomi_Bouton&#039;]=&#039;Off&#039;
+        commandArray[1]={[&#039;Alarme_in&#039;]=&#039;On&#039;}
+        commandArray[2]={[&#039;Alarme_out&#039;]=&#039;Off&#039;}
+    end
+
+return commandArray]]></description>
+			<content:encoded><![CDATA[<p>Merci pour ce script qui m&rsquo;a permis de gérer mon bouton rond xiaomi et l&rsquo;état ON/OFF avec le click tout en gardant le double click pour une autre action.<br />
+Je partage le script retouché :<br />
+&#8212; Bouton physique d&rsquo;activation de l&rsquo;alarme</p>
+<p>commandArray = {}</p>
+<p>&#8212; Alarme totale</p>
+<p>    if (devicechanged[&lsquo;Xiaomi_Bouton&rsquo;] == &lsquo;Click&rsquo; and otherdevices[&lsquo;Alarme_out&rsquo;] == &lsquo;Off&rsquo;) then<br />
+        print(« Activation alarme out par bouton physique »)<br />
+        commandArray[&lsquo;Xiaomi_Bouton&rsquo;]=&rsquo;Off&rsquo;<br />
+        commandArray[1]={[&lsquo;Alarme_out&rsquo;]=&rsquo;On&rsquo;}<br />
+    end</p>
+<p>    if (devicechanged[&lsquo;Xiaomi_Bouton&rsquo;] == &lsquo;Click&rsquo; and otherdevices[&lsquo;Alarme_out&rsquo;] == &lsquo;On&rsquo;) then<br />
+        print(« Désactivation alarme out par bouton physique »)<br />
+        commandArray[&lsquo;Xiaomi_Bouton&rsquo;]=&rsquo;Off&rsquo;<br />
+        commandArray[1]={[&lsquo;Alarme_out&rsquo;]=&rsquo;Off&rsquo;}<br />
+    end</p>
+<p>    if (devicechanged[&lsquo;Xiaomi_Bouton&rsquo;] == &lsquo;Click&rsquo; and otherdevices[&lsquo;Alarme_in&rsquo;] == &lsquo;On&rsquo;) then<br />
+        print(« Désactivation alarme out par bouton physique »)<br />
+        commandArray[&lsquo;Xiaomi_Bouton&rsquo;]=&rsquo;Off&rsquo;<br />
+        commandArray[1]={[&lsquo;Alarme_out&rsquo;]=&rsquo;On&rsquo;}<br />
+        commandArray[2]={[&lsquo;Alarme_in&rsquo;]=&rsquo;Off&rsquo;}<br />
+    end</p>
+<p>&#8212; Alarme partielle</p>
+<p>    if (devicechanged[&lsquo;Xiaomi_Bouton&rsquo;] == &lsquo;Double Click&rsquo; and otherdevices[&lsquo;Alarme_in&rsquo;] == &lsquo;Off&rsquo;) then<br />
+        print(« Activation alarme in par bouton physique »)<br />
+        commandArray[&lsquo;Xiaomi_Bouton&rsquo;]=&rsquo;Off&rsquo;<br />
+        commandArray[1]={[&lsquo;Alarme_in&rsquo;]=&rsquo;On&rsquo;}<br />
+    end</p>
+<p>    if (devicechanged[&lsquo;Xiaomi_Bouton&rsquo;] == &lsquo;Double Click&rsquo; and otherdevices[&lsquo;Alarme_in&rsquo;] == &lsquo;On&rsquo;) then<br />
+        print(« Activation alarme in par bouton physique »)<br />
+        commandArray[&lsquo;Xiaomi_Bouton&rsquo;]=&rsquo;Off&rsquo;<br />
+        commandArray[1]={[&lsquo;Alarme_in&rsquo;]=&rsquo;Off&rsquo;}<br />
+    end</p>
+<p>    if (devicechanged[&lsquo;Xiaomi_Bouton&rsquo;] == &lsquo;Double Click&rsquo; and otherdevices[&lsquo;Alarme_out&rsquo;] == &lsquo;On&rsquo;) then<br />
+        print(« Activation alarme in par bouton physique »)<br />
+        commandArray[&lsquo;Xiaomi_Bouton&rsquo;]=&rsquo;Off&rsquo;<br />
+        commandArray[1]={[&lsquo;Alarme_in&rsquo;]=&rsquo;On&rsquo;}<br />
+        commandArray[2]={[&lsquo;Alarme_out&rsquo;]=&rsquo;Off&rsquo;}<br />
+    end</p>
+<p>return commandArray</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:58:29 by W3 Total Cache
+-->

@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR" data-save-color-scheme="yes" data-kenta-blog-id="kenta-blog" data-kenta-theme="light">
+
+<!-- Mirrored from domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/?replytocom=199 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Jan 2026 11:58:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+	<link media="all" href="../../../../wp-content/cache/autoptimize/css/autoptimize_457c3e14b978492b505c65c4a398f6a9.css" rel="stylesheet"><title>Script de surveillance de capteurs &#8211; Easter&#039;s Domo</title>
+<meta name='robots' content='max-image-preview:large, noindex, follow' />
+<link href='https://sp-ao.shortpixel.ai/' rel='preconnect' />
+<link href='https://fonts.gstatic.com/' crossorigin='anonymous' rel='preconnect' />
+<link href='https://ajax.googleapis.com/' rel='preconnect' />
+<link href='https://fonts.googleapis.com/' rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Easter&#039;s Domo &raquo; Flux" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Easter&#039;s Domo &raquo; Flux des commentaires" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Easter&#039;s Domo &raquo; Script de surveillance de capteurs Flux des commentaires" href="feed/index.html" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../../../../wp-json/oembed/1.0/embed73fc.json?url=https%3A%2F%2Fdomo.easter.fr%2F2018%2F09%2F08%2Fscript-de-surveillance-de-capteurs%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../../../../wp-json/oembed/1.0/embed5722?url=https%3A%2F%2Fdomo.easter.fr%2F2018%2F09%2F08%2Fscript-de-surveillance-de-capteurs%2F&amp;format=xml" />
+
+
+
+
+
+
+
+
+
+
+<link rel='stylesheet' id='kenta-cached-dynamic-styles-css' href='../../../../wp-content/cache/autoptimize/css/autoptimize_single_ae3b723467f3d381895fd82082c92cbb8ddd.css?ver=1766510070' media='all' />
+
+
+<link rel="https://api.w.org/" href="../../../../wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="../../../../wp-json/wp/v2/posts/203.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../xmlrpc0db0.php?rsd" />
+<meta name="generator" content="WordPress 6.9" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../../../../indexc39e.html?p=203' />
+<link rel="friends-base-url" href="../../../../wp-json/friends/v1.json" />
+<link rel="pingback" href="../../../../xmlrpc.php">    
+    
+    
+    
+    
+    
+	<style type="text/css"> #turnkey-credit { font-family: Tahoma,Sans,Arial,Helvetica,Verdana,sans-serif; font-size: 11px; text-align: center; } #turnkey-credit a { text-decoration: none; } #turnkey-credit a:hover { text-decoration: underline; } body.wp-admin #turnkey-credit, body#image #turnkey-credit, body#media-upload #turnkey-credit { display: none; } </style></head>
+<body class="wp-singular post-template-default single single-post postid-203 single-format-standard wp-embed-responsive wp-theme-kenta kenta-body overflow-x-hidden kenta-form-classic kenta-single_post"        data-kenta-scroll-reveal="{&quot;delay&quot;:200,&quot;duration&quot;:600,&quot;interval&quot;:200,&quot;opacity&quot;:0,&quot;scale&quot;:1,&quot;origin&quot;:&quot;bottom&quot;,&quot;distance&quot;:&quot;200px&quot;}">
+<a class="skip-link screen-reader-text" href="#content">
+	Skip to content</a>
+<div data-sticky-container class="kenta-site-wrap z-[1]">
+            <div class="kenta-preloader-wrap kenta-preloader-preset-1">
+				<div class="kenta-preloader-1"></div>            </div>
+			            <div id="kenta-search-modal" data-toggle-behaviour="toggle" class="kenta-search-modal kenta-modal kenta_header_el_search_modal">
+                <div class="kenta-modal-content">
+                    <div class="max-w-screen-md mx-auto mt-60 kenta-search-modal-form form-controls form-underline"
+                         data-redirect-focus="#kenta-close-search-modal-button">
+						<form role="search"  method="get"
+      action="https://domo.easter.fr/"
+      class="search-form"
+>
+    <div class="relative">
+        <label class="flex items-center flex-grow mb-0" for="search-form-6970befe53530">
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" id="search-form-6970befe53530"
+                   placeholder="Type &amp; Hit Enter"
+                   value="" name="s"
+                   class="search-input"
+            />
+			        </label>
+    </div>
+</form>
+                    </div>
+                </div>
+
+                <div class="kenta-modal-actions">
+                    <button id="kenta-close-search-modal-button"
+                            class="kenta-close-modal"
+                            data-toggle-target="#kenta-search-modal"
+                            data-toggle-hidden-focus=".kenta-search-button"
+                            type="button"
+                    >
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </div>
+			    <header class="kenta-site-header text-accent">
+	        <div id="kenta-off-canvas-modal" class="kenta-off-canvas kenta-modal" data-toggle-behaviour="drawer-right">
+        <div class="kenta-modal-inner">
+                <div class="kenta-modal-actions">
+                    <button id="kenta-close-off-canvas-modal"
+                            class="kenta-close-modal"
+                            data-toggle-target="#kenta-off-canvas-modal"
+                            type="button"
+                    >
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="kenta-modal-content" data-redirect-focus="#kenta-close-off-canvas-modal">
+			<div class="kenta-builder-column kenta-builder-column-0 kenta-builder-column-desktop kenta-builder-column-desktop-dir-column kenta-builder-column-tablet-dir-column kenta-builder-column-mobile-dir-column kenta_header_builder_col_modal_0_desktop"><div data-builder-element="collapsable-menu" class="kenta-collapsable-menu h-full kenta_header_el_collapsable_menu_wrap"><ul class="kenta-collapsable-menu kenta_header_el_collapsable_menu collapsable kenta-menu-has-arrow"><li class="page_item page-item-342"><a href="../../../../friends/index.html">Friends<button type="button" class="kenta-dropdown-toggle"><span class="kenta-menu-icon"><i class="fas fa-angle-down"></i></span></button></a></li>
+</ul>
+</div></div><div class="kenta-builder-column kenta-builder-column-0 kenta-builder-column-mobile kenta-builder-column-desktop-dir-column kenta-builder-column-tablet-dir-column kenta-builder-column-mobile-dir-column kenta_header_builder_col_modal_0_mobile"><div data-builder-element="collapsable-menu" class="kenta-collapsable-menu h-full kenta_header_el_collapsable_menu_wrap"><ul class="kenta-collapsable-menu kenta_header_el_collapsable_menu collapsable kenta-menu-has-arrow"><li class="page_item page-item-342"><a href="../../../../friends/index.html">Friends<button type="button" class="kenta-dropdown-toggle"><span class="kenta-menu-icon"><i class="fas fa-angle-down"></i></span></button></a></li>
+</ul>
+</div></div></div></div></div><div class="kenta-header-row kenta-header-row-primary_navbar" data-row="primary_navbar"><div class="kenta-max-w-wide has-global-padding container mx-auto text-xs flex flex-wrap items-stretch"><div class="kenta-builder-column kenta-builder-column-0 kenta-builder-column-desktop kenta-builder-column-desktop-dir-row kenta-builder-column-tablet-dir-row kenta-builder-column-mobile-dir-row kenta_header_builder_col_primary_navbar_0_desktop">            <div data-builder-element="logo" class="kenta-site-branding kenta_header_el_logo" data-logo="left">
+				                <div class="site-identity">
+					                        <span class="site-title">
+                        <a href="../../../../index.html">Easter&#039;s Domo</a>
+                    </span>
+										                        <span class="site-tagline">
+                        Home Automation Stuff                    </span>
+					                </div>
+            </div>
+			</div><div class="kenta-builder-column kenta-builder-column-0 kenta-builder-column-mobile kenta-builder-column-desktop-dir-row kenta-builder-column-tablet-dir-row kenta-builder-column-mobile-dir-row kenta_header_builder_col_primary_navbar_0_mobile">            <div data-builder-element="logo" class="kenta-site-branding kenta_header_el_logo" data-logo="left">
+				                <div class="site-identity">
+					                        <span class="site-title">
+                        <a href="../../../../index.html">Easter&#039;s Domo</a>
+                    </span>
+										                        <span class="site-tagline">
+                        Home Automation Stuff                    </span>
+					                </div>
+            </div>
+			</div><div class="kenta-builder-column kenta-builder-column-1 kenta-builder-column-mobile kenta-builder-column-desktop-dir-row kenta-builder-column-tablet-dir-row kenta-builder-column-mobile-dir-row kenta_header_builder_col_primary_navbar_1_mobile">            <button type="button" data-builder-element="theme-switch" class="kenta-theme-switch kenta-icon-button kenta-icon-button- kenta-icon-button- kenta_header_el_theme_switch">
+	            <span class="light-mode">
+				<i class="fas fa-sun"></i>	            </span>
+                <span class="dark-mode">
+				<i class="fas fa-moon"></i>	            </span>
+            </button>
+			            <div data-builder-element="search" class=" kenta-search-wrap kenta-form relative kenta_header_el_search">
+                <button type="button" class="kenta-search-button kenta-icon-button kenta-icon-button- kenta-icon-button-" data-toggle-target="#kenta-search-modal"  data-toggle-show-focus="#kenta-search-modal :focusable">
+					<i class="fas fa-magnifying-glass"></i>                </button>
+				            </div>
+			            <button type="button" data-builder-element="trigger" class="kenta-trigger kenta-icon-button kenta-icon-button- kenta-icon-button- kenta_header_el_trigger" data-toggle-target="#kenta-off-canvas-modal"  data-toggle-show-focus="#kenta-off-canvas-modal :focusable">
+				<i class="fas fa-bars-staggered"></i>            </button>
+			</div></div></div>    </header>
+	
+<main class="kenta-container flex flex-col lg:flex-row flex-grow z-[1] is-style-boxed is-align-narrow kenta-no-sidebar no-sidebar">
+    <div id="content" class="kenta-article-content-wrap relative flex-grow max-w-full">
+		        <article id="post-203" class="post-203 post type-post status-publish format-standard has-post-thumbnail hentry category-domoticz category-lua">
+
+			
+		            <header class="kenta-post-header kenta-article-header kenta-max-w-content has-global-padding mx-auto relative z-[1]">
+													<div class="card-content flex-grow">																			<div class="entry-categories cat-taxonomies break-words mb-2 last:mb-0" data-tax-type="badge"><a class="entry-tax-item mr-2 last:mr-0" href="../../../../category/domoticz/index.html" rel="category tag">Domoticz</a><a class="entry-tax-item mr-2 last:mr-0" href="../../../../category/lua/index.html" rel="category tag">lua</a></div>			
+																											                <div class="entry-title mb-gutter last:mb-0">
+					<h1>Script de surveillance de capteurs</h1>                </div>
+												
+																																	                <div class="entry-metas mb-half-gutter last:mb-0">
+					<span class="byline meta-item"> <a class="entry-meta-link" href="../../../../author/simon/index.html">simon</a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span><span class="meta-item posted-on"><a class="entry-meta-link" href="index.html" rel="bookmark"><span class="entry-date"><time class="published" datetime="2018-09-08T00:19:56+02:00">Sep 8, 2018</time><time class="updated hidden" datetime="2018-09-08T00:42:19+02:00">Sep 8, 2018</time></span></a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span><span class="meta-item comments-link"><a href="index.html#comments" class="entry-meta-link" >5 commentaires <span class="screen-reader-text"> sur Script de surveillance de capteurs</span></a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span>                </div>
+						
+																            </header>
+		
+		<div class="kenta_post_feature_image article-featured-image kenta-max-w-content mx-auto"><img width="281" height="581" src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_281,h_581/https://domo.easter.fr/wp-content/uploads/2018/09/Battery_Almost_Empty.png" class="h-full object-center object-cover alignwide wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_281/https://domo.easter.fr/wp-content/uploads/2018/09/Battery_Almost_Empty.png 281w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_145/https://domo.easter.fr/wp-content/uploads/2018/09/Battery_Almost_Empty-145x300.png 145w" sizes="(max-width: 281px) 100vw, 281px" /></div>		
+            <!-- Article Content -->
+            <div class="kenta-article-content is-layout-constrained kenta-entry-content entry-content has-global-padding clearfix mx-auto">
+
+				<p>Un post rapide pour partager un script qui permet de signaler quand un capteur ne répond plus après un certain temps.</p>
+<p>Pratique quand on a pas tout le temps le nez devant Domoticz et qu&rsquo;une pile est arrivée en fin de vie sur un capteur sans fil.</p>
+<p>Il faut ajouter les capteurs à surveiller à partir de la ligne 16 et rajouter un ligne par capteur avec la durée en seconde :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »deadsensors.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+            </div>
+        </article>
+		    <div class="kenta-max-w-content has-global-padding mx-auto">
+        <div class="kenta-about-author-bio-box">
+			<a href="../../../../author/simon/index.html" class="kenta-author-bio-avatar-link"><noscript><img alt='' src='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=80&amp;r=g' srcset='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=160&#038;r=g 2x' class='avatar avatar-80 photo kenta-author-bio-avatar' height='80' width='80' decoding='async'/></noscript><img alt='' src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E' data-src='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=80&amp;r=g' data-srcset='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=160&amp;r=g%202x' class='lazyload avatar avatar-80 photo kenta-author-bio-avatar' height='80' width='80' decoding='async'/></a>
+			<h5 class="kenta-author-bio-name">Hi, I’m <span class="kenta-author-bio-display-name">simon</span></h5>
+			                <a class="kenta-author-bio-all-articles" href="../../../../author/simon/index.html"
+                   rel="author">
+					All My Articles                </a>
+			
+            <p class="kenta-author-bio">
+				            </p>
+        </div>
+    </div>
+	        <div class="mx-auto kenta-max-w-content has-global-padding">
+            <div class="kenta-socials kenta-post-socials kenta-socials-custom kenta-socials-rounded kenta-socials-solid">
+				                        <a class="kenta-social-link" target="_blank" rel="nofollow"                                style="--kenta-official-color: #557dbc;"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdomo.easter.fr%2F2018%2F09%2F08%2Fscript-de-surveillance-de-capteurs%2F">
+                            <span class="kenta-social-icon">
+                                <i class="fab fa-facebook"></i>                            </span>
+                        </a>
+						                        <a class="kenta-social-link" target="_blank" rel="nofollow"                                style="--kenta-official-color: #000000;"
+                                href="https://twitter.com/share?url=https%3A%2F%2Fdomo.easter.fr%2F2018%2F09%2F08%2Fscript-de-surveillance-de-capteurs%2F&amp;text=Script%20de%20surveillance%20de%20capteurs">
+                            <span class="kenta-social-icon">
+                                <i class="fab fa-x-twitter"></i>                            </span>
+                        </a>
+						            </div>
+        </div>
+		<div class="kenta-max-w-content has-global-padding mx-auto"><div class="kenta-post-navigation">
+	<nav class="navigation post-navigation" aria-label="&lt;span class=&quot;nav-subtitle screen-reader-text&quot;&gt;Page&lt;/span&gt;">
+		<h2 class="screen-reader-text">&lt;span class=&quot;nav-subtitle screen-reader-text&quot;&gt;Page&lt;/span&gt;</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="../detection-de-pluie-et-pluviometre/index.html" rel="prev"><div class="prev-post-thumbnail post-thumbnail"><noscript><img width="194" height="259" src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_194,h_259/https://domo.easter.fr/wp-content/uploads/2018/09/rain.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" /></noscript><img width="194" height="259" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20194%20259%22%3E%3C/svg%3E' data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_194,h_259/https://domo.easter.fr/wp-content/uploads/2018/09/rain.jpg" class="lazyload attachment-medium size-medium wp-post-image" alt="" decoding="async" /><i class="fas fa-arrow-left-long"></i></div><div class="item-wrap pl-gutter lg:pr-2"><span class="item-label">Previous Post</span><span class="item-title">Détection de pluie et pluviomètre</span></div></a></div><div class="nav-next"><a href="../../../../2019/09/02/pluviometre/index.html" rel="next"><div class="next-post-thumbnail post-thumbnail"><noscript><img width="300" height="300" src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300,h_300/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-300x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" srcset="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-300x300.jpg 300w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_150/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-150x150.jpg 150w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-768x768.jpg 768w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><img width="300" height="300" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20300%22%3E%3C/svg%3E' data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300,h_300/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-300x300.jpg" class="lazyload attachment-medium size-medium wp-post-image" alt="" decoding="async" data-srcset="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-300x300.jpg 300w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_150/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-150x150.jpg 150w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-768x768.jpg 768w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre.jpg 800w" data-sizes="(max-width: 300px) 100vw, 300px" /><i class="fas fa-arrow-right-long"></i></div><div class="item-wrap pr-gutter lg:pl-2"><span class="item-label">Next Post</span><span class="item-title">Pluviomètre</span></div></a></div></div>
+	</nav></div></div>            <div class="kenta-max-w-content has-global-padding mx-auto">
+                <div class="kenta-related-posts-wrap kenta-heading kenta-heading-style-1">
+                    <h3 class="heading-content uppercase my-gutter">Related Posts</h3>
+                    <div class="flex flex-wrap kenta-related-posts-list">
+						                            <div class="card-wrapper">
+                                <article data-card-layout="archive-grid" class="card overflow-hidden h-full post-245 post type-post status-publish format-standard has-post-thumbnail hentry category-domoticz category-nodemcu tag-arduino tag-domoticz tag-nodemcu">
+																		
+                <a href="../../../../2020/06/02/porte-de-poulailler-connectee/index.html" class="card-thumbnail entry-thumbnail last:mb-0 card-content">
+					<noscript><img width="1024" height="766" src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1024,h_766/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-1024x766.jpg" class="w-full h-full wp-post-image" alt="" decoding="async" srcset="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1024/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-1024x766.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-300x224.jpg 300w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-768x574.jpg 768w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1536/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-1536x1149.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_2048/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-2048x1532.jpg 2048w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_600/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-600x450.jpg 600w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript><img width="1024" height="766" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%201024%20766%22%3E%3C/svg%3E' data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1024,h_766/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-1024x766.jpg" class="lazyload w-full h-full wp-post-image" alt="" decoding="async" data-srcset="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1024/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-1024x766.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-300x224.jpg 300w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-768x574.jpg 768w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1536/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-1536x1149.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_2048/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-2048x1532.jpg 2048w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_600/https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-600x450.jpg 600w" data-sizes="(max-width: 1024px) 100vw, 1024px" />                </a>
+															
+																					<div class="card-content flex-grow">													<h4 class="entry-title mb-half-gutter last:mb-0"><a class="link" href="../../../../2020/06/02/porte-de-poulailler-connectee/index.html" rel="bookmark">Porte de poulailler connectée</a> </h4>									
+																																				
+						                <div class="entry-excerpt mb-gutter last:mb-0">
+					A la fin du confinement, on a fait l’acquisition de...                </div>
+																														                <div class="entry-metas mb-half-gutter last:mb-0">
+					<span class="byline meta-item"> <a class="entry-meta-link" href="../../../../author/simon/index.html">simon</a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span><span class="meta-item posted-on"><a class="entry-meta-link" href="../../../../2020/06/02/porte-de-poulailler-connectee/index.html" rel="bookmark"><span class="entry-date"><time class="published" datetime="2020-06-02T18:18:58+02:00">Juin 2, 2020</time><time class="updated hidden" datetime="2020-06-11T11:51:01+02:00">Juin 11, 2020</time></span></a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span>                </div>
+						
+																                                </article>
+                            </div>
+						                            <div class="card-wrapper">
+                                <article data-card-layout="archive-grid" class="card overflow-hidden h-full post-224 post type-post status-publish format-standard has-post-thumbnail hentry category-3dprinting category-domoticz category-lua">
+																		
+                <a href="../../../../2019/10/04/octoprint-et-domoticz/index.html" class="card-thumbnail entry-thumbnail last:mb-0 card-content">
+					<noscript><img width="458" height="384" src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_458,h_384/https://domo.easter.fr/wp-content/uploads/2019/10/Capture-du2019écran-2015-01-13-à-18.30.58.png" class="w-full h-full wp-post-image" alt="" decoding="async" srcset="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_458/https://domo.easter.fr/wp-content/uploads/2019/10/Capture-du2019écran-2015-01-13-à-18.30.58.png 458w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300/https://domo.easter.fr/wp-content/uploads/2019/10/Capture-du2019écran-2015-01-13-à-18.30.58-300x252.png 300w" sizes="(max-width: 458px) 100vw, 458px" /></noscript><img width="458" height="384" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20458%20384%22%3E%3C/svg%3E' data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_458,h_384/https://domo.easter.fr/wp-content/uploads/2019/10/Capture-du2019écran-2015-01-13-à-18.30.58.png" class="lazyload w-full h-full wp-post-image" alt="" decoding="async" data-srcset="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_458/https://domo.easter.fr/wp-content/uploads/2019/10/Capture-du2019écran-2015-01-13-à-18.30.58.png 458w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300/https://domo.easter.fr/wp-content/uploads/2019/10/Capture-du2019écran-2015-01-13-à-18.30.58-300x252.png 300w" data-sizes="(max-width: 458px) 100vw, 458px" />                </a>
+															
+																					<div class="card-content flex-grow">													<h4 class="entry-title mb-half-gutter last:mb-0"><a class="link" href="../../../../2019/10/04/octoprint-et-domoticz/index.html" rel="bookmark">Octoprint et Domoticz</a> </h4>									
+																																				
+						                <div class="entry-excerpt mb-gutter last:mb-0">
+					Un petit script lua pour récupérer les infos d&rsquo;Octoprint dans...                </div>
+																														                <div class="entry-metas mb-half-gutter last:mb-0">
+					<span class="byline meta-item"> <a class="entry-meta-link" href="../../../../author/simon/index.html">simon</a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span><span class="meta-item posted-on"><a class="entry-meta-link" href="../../../../2019/10/04/octoprint-et-domoticz/index.html" rel="bookmark"><span class="entry-date"><time class="published" datetime="2019-10-04T09:55:30+02:00">Oct 4, 2019</time><time class="updated hidden" datetime="2019-10-04T10:16:56+02:00">Oct 4, 2019</time></span></a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span><span class="meta-item comments-link"><a href="../../../../2019/10/04/octoprint-et-domoticz/index.html#comments" class="entry-meta-link" >37 commentaires <span class="screen-reader-text"> sur Octoprint et Domoticz</span></a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span>                </div>
+						
+																                                </article>
+                            </div>
+						                            <div class="card-wrapper">
+                                <article data-card-layout="archive-grid" class="card overflow-hidden h-full post-214 post type-post status-publish format-standard has-post-thumbnail hentry category-domoticz category-nodemcu">
+																		
+                <a href="../../../../2019/09/02/pluviometre/index.html" class="card-thumbnail entry-thumbnail last:mb-0 card-content">
+					<noscript><img width="800" height="800" src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800,h_800/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre.jpg" class="w-full h-full wp-post-image" alt="" decoding="async" srcset="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre.jpg 800w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_150/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-150x150.jpg 150w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-300x300.jpg 300w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-768x768.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript><img width="800" height="800" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20800%20800%22%3E%3C/svg%3E' data-src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800,h_800/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre.jpg" class="lazyload w-full h-full wp-post-image" alt="" decoding="async" data-srcset="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre.jpg 800w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_150/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-150x150.jpg 150w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_300/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-300x300.jpg 300w, https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://domo.easter.fr/wp-content/uploads/2019/09/capteur-pluviometre-768x768.jpg 768w" data-sizes="(max-width: 800px) 100vw, 800px" />                </a>
+															
+																					<div class="card-content flex-grow">													<h4 class="entry-title mb-half-gutter last:mb-0"><a class="link" href="../../../../2019/09/02/pluviometre/index.html" rel="bookmark">Pluviomètre</a> </h4>									
+																																				
+						                <div class="entry-excerpt mb-gutter last:mb-0">
+					Bon, finalement le module Fibaro FGBS-001 ne semble plus fonctionner....                </div>
+																														                <div class="entry-metas mb-half-gutter last:mb-0">
+					<span class="byline meta-item"> <a class="entry-meta-link" href="../../../../author/simon/index.html">simon</a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span><span class="meta-item posted-on"><a class="entry-meta-link" href="../../../../2019/09/02/pluviometre/index.html" rel="bookmark"><span class="entry-date"><time class="published" datetime="2019-09-02T10:24:42+02:00">Sep 2, 2019</time><time class="updated hidden" datetime="2019-09-05T07:57:34+02:00">Sep 5, 2019</time></span></a></span><span class="meta-divider"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M9,17.2l5.1-10.9L15,6.8L9.9,17.6L9,17.2z"/></svg></span>                </div>
+						
+																                                </article>
+                            </div>
+												                    </div>
+                </div>
+            </div>
+			<div class="mx-auto kenta-max-w-content has-global-padding">
+    <div id="comments" class="kenta-comments-area">
+		            <h2 class="comments-title font-bold text-lg mb-gutter">
+				5 Comments            </h2>
+
+			
+            <ol class="comment-list mb-gutter">
+						<li id="comment-198" class="comment even thread-even depth-1 parent">
+			<article id="div-comment-198" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<noscript><img alt='' src='https://secure.gravatar.com/avatar/56dbcba899ef75b785e7590095b9b7c54f013aab9c53022e51805d93a2bb1958?s=32&amp;r=g' srcset='https://secure.gravatar.com/avatar/56dbcba899ef75b785e7590095b9b7c54f013aab9c53022e51805d93a2bb1958?s=64&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' decoding='async'/></noscript><img alt='' src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2032%2032%22%3E%3C/svg%3E' data-src='https://secure.gravatar.com/avatar/56dbcba899ef75b785e7590095b9b7c54f013aab9c53022e51805d93a2bb1958?s=32&amp;r=g' data-srcset='https://secure.gravatar.com/avatar/56dbcba899ef75b785e7590095b9b7c54f013aab9c53022e51805d93a2bb1958?s=64&amp;r=g%202x' class='lazyload avatar avatar-32 photo' height='32' width='32' decoding='async'/>						<b class="fn">Seb</b> <span class="says">dit :</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="index.html#comment-198"><time datetime="2019-01-20T21:59:57+01:00">20 janvier 2019 à 21 h 59 min</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Bonjour<br />
+Je viens d&rsquo;installer le script mais c&rsquo;est normal que le script remplit le log toutes les 5 à 10 seccondes ?<br />
+Status: LUA: [Check_Sensor_Battery] Checking for last sensor updates<br />
+Ce n&rsquo;est pas censé se déclencher seulement une fois par jour ?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link" href="index9095.html?replytocom=198#respond" data-commentid="198" data-postid="203" data-belowelement="div-comment-198" data-respondelement="respond" data-replyto="Répondre à Seb" aria-label="Répondre à Seb">Répondre</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-199" class="comment byuser comment-author-simon bypostauthor odd alt depth-2">
+			<article id="div-comment-199" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<noscript><img alt='' src='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=32&amp;r=g' srcset='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=64&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' decoding='async'/></noscript><img alt='' src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2032%2032%22%3E%3C/svg%3E' data-src='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=32&amp;r=g' data-srcset='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=64&amp;r=g%202x' class='lazyload avatar avatar-32 photo' height='32' width='32' decoding='async'/>						<b class="fn">simon</b> <span class="says">dit :</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="index.html#comment-199"><time datetime="2019-01-21T10:57:12+01:00">21 janvier 2019 à 10 h 57 min</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>En fait tout les scripts tournent tous les temps, seul la condition spécifiée ligne 25 fait qu&rsquo;il rentre dans le check des batteries.<br />
+Si tu ne veux plus voir l&rsquo;affiche de « Status: LUA: [Check_Sensor_Battery] Checking for last sensor updates »<br />
+il te faut commenter ou supprimer la ligne 12:<br />
+print(« [Check_Sensor_Battery] Checking for last sensor updates »)</p>
+<p>Ou la déplacer après la ligne 25 justement pour qu&rsquo;elle ne soit affichée que quand le script tourne réellement.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link" href="indexd21f.html?replytocom=199#respond" data-commentid="199" data-postid="203" data-belowelement="div-comment-199" data-respondelement="respond" data-replyto="Répondre à simon" aria-label="Répondre à simon">Répondre</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-206" class="comment even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-206" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<noscript><img alt='' src='https://secure.gravatar.com/avatar/56dbcba899ef75b785e7590095b9b7c54f013aab9c53022e51805d93a2bb1958?s=32&amp;r=g' srcset='https://secure.gravatar.com/avatar/56dbcba899ef75b785e7590095b9b7c54f013aab9c53022e51805d93a2bb1958?s=64&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' decoding='async'/></noscript><img alt='' src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2032%2032%22%3E%3C/svg%3E' data-src='https://secure.gravatar.com/avatar/56dbcba899ef75b785e7590095b9b7c54f013aab9c53022e51805d93a2bb1958?s=32&amp;r=g' data-srcset='https://secure.gravatar.com/avatar/56dbcba899ef75b785e7590095b9b7c54f013aab9c53022e51805d93a2bb1958?s=64&amp;r=g%202x' class='lazyload avatar avatar-32 photo' height='32' width='32' decoding='async'/>						<b class="fn">pim</b> <span class="says">dit :</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="index.html#comment-206"><time datetime="2019-03-03T20:48:40+01:00">3 mars 2019 à 20 h 48 min</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Salut<br />
+J&rsquo;ai installé le script et aujourd&rsquo;hui j&rsquo;ai un sensor qui ne répondait plus. J&rsquo;ai reçu alors une notification par minute jusqu&rsquo;à ce que je change la pile. Est ce qu&rsquo;on ne pourrait pas modifier le script pour avoir une seule et unique notification ?<br />
+Merci</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link" href="index20e7.html?replytocom=206#respond" data-commentid="206" data-postid="203" data-belowelement="div-comment-206" data-respondelement="respond" data-replyto="Répondre à pim" aria-label="Répondre à pim">Répondre</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-207" class="comment byuser comment-author-simon bypostauthor odd alt depth-2">
+			<article id="div-comment-207" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<noscript><img alt='' src='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=32&amp;r=g' srcset='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=64&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' decoding='async'/></noscript><img alt='' src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2032%2032%22%3E%3C/svg%3E' data-src='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=32&amp;r=g' data-srcset='https://secure.gravatar.com/avatar/727e093e10007418dea31f874820bca889b8441c18b3d36b16cf9fa5cfeb63b0?s=64&amp;r=g%202x' class='lazyload avatar avatar-32 photo' height='32' width='32' decoding='async'/>						<b class="fn">simon</b> <span class="says">dit :</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="index.html#comment-207"><time datetime="2019-03-04T11:23:39+01:00">4 mars 2019 à 11 h 23 min</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Normalement le script se lance toutes les minutes mais ne rentre dans la première boucles que si la première condition de l&rsquo;heure est rempli :<br />
+if date.hour==18 and date.min==30 then</p>
+<p>Ici à 18h30 et ne doit envoyer les notifications qu&rsquo;à ce moment là aussi.<br />
+Peux-tu me copier coller ton script ?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link" href="index1679.html?replytocom=207#respond" data-commentid="207" data-postid="203" data-belowelement="div-comment-207" data-respondelement="respond" data-replyto="Répondre à simon" aria-label="Répondre à simon">Répondre</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-218" class="comment even thread-even depth-1">
+			<article id="div-comment-218" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<noscript><img alt='' src='https://secure.gravatar.com/avatar/a1b5cefc27ed65e617dd957e9a2559b2299a3c7685b139d467c299e3a8efc02f?s=32&amp;r=g' srcset='https://secure.gravatar.com/avatar/a1b5cefc27ed65e617dd957e9a2559b2299a3c7685b139d467c299e3a8efc02f?s=64&#038;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' decoding='async'/></noscript><img alt='' src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2032%2032%22%3E%3C/svg%3E' data-src='https://secure.gravatar.com/avatar/a1b5cefc27ed65e617dd957e9a2559b2299a3c7685b139d467c299e3a8efc02f?s=32&amp;r=g' data-srcset='https://secure.gravatar.com/avatar/a1b5cefc27ed65e617dd957e9a2559b2299a3c7685b139d467c299e3a8efc02f?s=64&amp;r=g%202x' class='lazyload avatar avatar-32 photo' height='32' width='32' decoding='async'/>						<b class="fn"><a href="https://www.fullmetalmaket.com/" class="url" rel="ugc external nofollow">Puzzle 3D</a></b> <span class="says">dit :</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="index.html#comment-218"><time datetime="2019-04-18T09:23:59+02:00">18 avril 2019 à 9 h 23 min</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Bonjour,<br />
+Script parfait pur combler ce manque d&rsquo;info quand un capteur ne répond plus !<br />
+Ça sauve la mise et ce devrait être natif sur domoticz à mon avis.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link" href="index013a.html?replytocom=218#respond" data-commentid="218" data-postid="203" data-belowelement="div-comment-218" data-respondelement="respond" data-replyto="Répondre à Puzzle 3D" aria-label="Répondre à Puzzle 3D">Répondre</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+            </ol><!-- .comment-list -->
+
+				<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Répondre à <a href="#comment-199">simon</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond">Annuler la réponse</a></small></h3><form action="https://domo.easter.fr/wp-comments-post.php" method="post" id="commentform" class="comment-form kenta-form form-default"><p class="comment-notes"><span id="email-notes">Votre adresse e-mail ne sera pas publiée.</span> <span class="required-field-message">Les champs obligatoires sont indiqués avec <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Commentaire <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Nom <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required /></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="comment-form-url"><label for="url">Site web</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Laisser un commentaire" /> <input type='hidden' name='comment_post_ID' value='203' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='199' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9847208bdc" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="165"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	<p class="akismet_comment_form_privacy_notice">Ce site utilise Akismet pour réduire les indésirables. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">En savoir plus sur la façon dont les données de vos commentaires sont traitées</a>.</p>    </div>
+</div><!-- #comments -->
+    </div>
+
+	</main>
+    <footer class="kenta-footer-area text-accent">
+	<div class="kenta-footer-row kenta-footer-row-bottom" data-row="bottom"><div class="kenta-max-w-wide has-global-padding container mx-auto px-gutter flex flex-wrap"><div class="kenta-builder-column kenta-builder-column-0 kenta-builder-column-all kenta-builder-column-desktop-dir-row kenta-builder-column-tablet-dir-row kenta-builder-column-mobile-dir-row kenta_footer_builder_col_bottom_0_all flex"><div data-builder-element="footer-menu" class="kenta-menu-wrap h-full kenta_footer_el_menu_wrap"><ul class="sf-menu clearfix kenta-menu kenta_footer_el_menu"><li class="page_item page-item-342"><a href="../../../../friends/index.html">Friends<span class="kenta-menu-icon"><i class="fas fa-angle-down"></i></span></a></li>
+</ul>
+</div></div><div class="kenta-builder-column kenta-builder-column-1 kenta-builder-column-all kenta-builder-column-desktop-dir-row kenta-builder-column-tablet-dir-row kenta-builder-column-mobile-dir-row kenta_footer_builder_col_bottom_1_all flex">            <div data-builder-element="copyright" class="kenta-copyright kenta-raw-html kenta_footer_el_copyright">
+				Copyright &copy; 2026  -  <a href="https://kentatheme.com/" target="_blank">Kenta</a> By WP Moose            </div>
+			</div></div></div>    </footer>
+	<a href="#" id="scroll-top" class="kenta-to-top kenta-to-top-right"><i class="fas fa-angle-up"></i></a>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/kenta/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+        <script>
+            // Do not change this comment line otherwise Speed Optimizer won't be able to detect this script
+
+            (function () {
+                const calculateParentDistance = (child, parent) => {
+                    let count = 0;
+                    let currentElement = child;
+
+                    // Traverse up the DOM tree until we reach parent or the top of the DOM
+                    while (currentElement && currentElement !== parent) {
+                        currentElement = currentElement.parentNode;
+                        count++;
+                    }
+
+                    // If parent was not found in the hierarchy, return -1
+                    if (!currentElement) {
+                        return -1; // Indicates parent is not an ancestor of element
+                    }
+
+                    return count; // Number of layers between element and parent
+                }
+                const isMatchingClass = (linkRule, href, classes, ids) => {
+                    return classes.includes(linkRule.value)
+                }
+                const isMatchingId = (linkRule, href, classes, ids) => {
+                    return ids.includes(linkRule.value)
+                }
+                const isMatchingDomain = (linkRule, href, classes, ids) => {
+                    if(!URL.canParse(href)) {
+                        return false
+                    }
+
+                    const url = new URL(href.html)
+                    const host = url.host
+                    const hostsToMatch = [host]
+
+                    if(host.startsWith('www.')) {
+                        hostsToMatch.push(host.substring(4))
+                    } else {
+                        hostsToMatch.push('www.' + host)
+                    }
+
+                    return hostsToMatch.includes(linkRule.value)
+                }
+                const isMatchingExtension = (linkRule, href, classes, ids) => {
+                    if(!URL.canParse(href)) {
+                        return false
+                    }
+
+                    const url = new URL(href.html)
+
+                    return url.pathname.endsWith('.' + linkRule.value)
+                }
+                const isMatchingSubdirectory = (linkRule, href, classes, ids) => {
+                    if(!URL.canParse(href)) {
+                        return false
+                    }
+
+                    const url = new URL(href.html)
+
+                    return url.pathname.startsWith('/' + linkRule.value + '/')
+                }
+                const isMatchingProtocol = (linkRule, href, classes, ids) => {
+                    if(!URL.canParse(href)) {
+                        return false
+                    }
+
+                    const url = new URL(href.html)
+
+                    return url.protocol === linkRule.value + ':'
+                }
+                const isMatchingExternal = (linkRule, href, classes, ids) => {
+                    if(!URL.canParse(href) || !URL.canParse(document.location.href)) {
+                        return false
+                    }
+
+                    const matchingProtocols = ['http:', 'https:']
+                    const siteUrl = new URL(document.location.html)
+                    const linkUrl = new URL(href.html)
+
+                    // Links to subdomains will appear to be external matches according to JavaScript,
+                    // but the PHP rules will filter those events out.
+                    return matchingProtocols.includes(linkUrl.protocol) && siteUrl.host !== linkUrl.host
+                }
+                const isMatch = (linkRule, href, classes, ids) => {
+                    switch (linkRule.type) {
+                        case 'class':
+                            return isMatchingClass(linkRule, href, classes, ids)
+                        case 'id':
+                            return isMatchingId(linkRule, href, classes, ids)
+                        case 'domain':
+                            return isMatchingDomain(linkRule, href, classes, ids)
+                        case 'extension':
+                            return isMatchingExtension(linkRule, href, classes, ids)
+                        case 'subdirectory':
+                            return isMatchingSubdirectory(linkRule, href, classes, ids)
+                        case 'protocol':
+                            return isMatchingProtocol(linkRule, href, classes, ids)
+                        case 'external':
+                            return isMatchingExternal(linkRule, href, classes, ids)
+                        default:
+                            return false;
+                    }
+                }
+                const track = (element) => {
+                    const href = element.href ?? null
+                    const classes = Array.from(element.classList)
+                    const ids = [element.id]
+                    const linkRules = [{"type":"extension","value":"pdf"},{"type":"extension","value":"zip"},{"type":"protocol","value":"mailto"},{"type":"protocol","value":"tel"}]
+                    if(linkRules.length === 0) {
+                        return
+                    }
+
+                    // For link rules that target an id, we need to allow that id to appear
+                    // in any ancestor up to the 7th ancestor. This loop looks for those matches
+                    // and counts them.
+                    linkRules.forEach((linkRule) => {
+                        if(linkRule.type !== 'id') {
+                            return;
+                        }
+
+                        const matchingAncestor = element.closest('#' + linkRule.value)
+
+                        if(!matchingAncestor || matchingAncestor.matches('html, body')) {
+                            return;
+                        }
+
+                        const depth = calculateParentDistance(element, matchingAncestor)
+
+                        if(depth < 7) {
+                            ids.push(linkRule.value)
+                        }
+                    });
+
+                    // For link rules that target a class, we need to allow that class to appear
+                    // in any ancestor up to the 7th ancestor. This loop looks for those matches
+                    // and counts them.
+                    linkRules.forEach((linkRule) => {
+                        if(linkRule.type !== 'class') {
+                            return;
+                        }
+
+                        const matchingAncestor = element.closest('.' + linkRule.value)
+
+                        if(!matchingAncestor || matchingAncestor.matches('html, body')) {
+                            return;
+                        }
+
+                        const depth = calculateParentDistance(element, matchingAncestor)
+
+                        if(depth < 7) {
+                            classes.push(linkRule.value)
+                        }
+                    });
+
+                    const hasMatch = linkRules.some((linkRule) => {
+                        return isMatch(linkRule, href, classes, ids)
+                    })
+
+                    if(!hasMatch) {
+                        return
+                    }
+
+                    const url = "../../../../wp-content/plugins/independent-analytics/iawp-click-endpoint.html";
+                    const body = {
+                        href: href,
+                        classes: classes.join(' '),
+                        ids: ids.join(' '),
+                        ...{"payload":{"resource":"singular","singular_id":203,"page":1},"signature":"43d13ed3405fa791f667c14f71e9755f"}                    };
+
+                    if (navigator.sendBeacon) {
+                        let blob = new Blob([JSON.stringify(body)], {
+                            type: "application/json"
+                        });
+                        navigator.sendBeacon(url, blob);
+                    } else {
+                        const xhr = new XMLHttpRequest();
+                        xhr.open("POST.html", url, true);
+                        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                        xhr.send(JSON.stringify(body))
+                    }
+                }
+                document.addEventListener('mousedown', function (event) {
+                                        if (navigator.webdriver || /bot|crawler|spider|crawling|semrushbot|chrome-lighthouse/i.test(navigator.userAgent)) {
+                        return;
+                    }
+                    
+                    const element = event.target.closest('a')
+
+                    if(!element) {
+                        return
+                    }
+
+                    const isPro = false
+                    if(!isPro) {
+                        return
+                    }
+
+                    // Don't track left clicks with this event. The click event is used for that.
+                    if(event.button === 0) {
+                        return
+                    }
+
+                    track(element)
+                })
+                document.addEventListener('click', function (event) {
+                                        if (navigator.webdriver || /bot|crawler|spider|crawling|semrushbot|chrome-lighthouse/i.test(navigator.userAgent)) {
+                        return;
+                    }
+                    
+                    const element = event.target.closest('a, button, input[type="submit"], input[type="button"]')
+
+                    if(!element) {
+                        return
+                    }
+
+                    const isPro = false
+                    if(!isPro) {
+                        return
+                    }
+
+                    track(element)
+                })
+                document.addEventListener('play', function (event) {
+                                        if (navigator.webdriver || /bot|crawler|spider|crawling|semrushbot|chrome-lighthouse/i.test(navigator.userAgent)) {
+                        return;
+                    }
+                    
+                    const element = event.target.closest('audio, video')
+
+                    if(!element) {
+                        return
+                    }
+
+                    const isPro = false
+                    if(!isPro) {
+                        return
+                    }
+
+                    track(element)
+                }, true)
+                document.addEventListener("DOMContentLoaded", function (e) {
+                    if (document.hasOwnProperty("visibilityState") && document.visibilityState === "prerender") {
+                        return;
+                    }
+
+                                            if (navigator.webdriver || /bot|crawler|spider|crawling|semrushbot|chrome-lighthouse/i.test(navigator.userAgent)) {
+                            return;
+                        }
+                    
+                    let referrer_url = null;
+
+                    if (typeof document.referrer === 'string' && document.referrer.length > 0) {
+                        referrer_url = document.referrer;
+                    }
+
+                    const params = location.search.slice(1).split('&').reduce((acc, s) => {
+                        const [k, v] = s.split('=');
+                        return Object.assign(acc, {[k]: v});
+                    }, {});
+
+                    const url = "../../../../wp-json/iawp/search.json";
+                    const body = {
+                        referrer_url,
+                        utm_source: params.utm_source,
+                        utm_medium: params.utm_medium,
+                        utm_campaign: params.utm_campaign,
+                        utm_term: params.utm_term,
+                        utm_content: params.utm_content,
+                        gclid: params.gclid,
+                        ...{"payload":{"resource":"singular","singular_id":203,"page":1},"signature":"43d13ed3405fa791f667c14f71e9755f"}                    };
+
+                    if (navigator.sendBeacon) {
+                        let blob = new Blob([JSON.stringify(body)], {
+                            type: "application/json"
+                        });
+                        navigator.sendBeacon(url, blob);
+                    } else {
+                        const xhr = new XMLHttpRequest();
+                        xhr.open("POST.html", url, true);
+                        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                        xhr.send(JSON.stringify(body))
+                    }
+                });
+            })();
+        </script>
+        <noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script async data-noptimize="1" src='../../../../wp-content/plugins/autoptimize/classes/external/js/lazysizes.min620a.js?ao_version=3.1.14'></script>
+
+
+
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://domo.easter.fr/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://domo.easter.fr/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script defer src="../../../../wp-content/cache/autoptimize/js/autoptimize_ad2eb604b98928d3f20288e2357616c1.js"></script><div id="turnkey-credit"> <div style="clear: both;"> <a href="https://www.turnkeylinux.org/wordpress">WordPress Appliance</a> - Powered by <a href="https://www.turnkeylinux.org/">TurnKey Linux</a> </div> </div></body>
+
+<!-- Mirrored from domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/?replytocom=199 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Jan 2026 11:58:44 GMT -->
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Requested URI contains query) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:56:46 by W3 Total Cache
+-->

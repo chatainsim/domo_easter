@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" >
+
+<channel>
+	<title>bluetooth &#8211; Easter&#039;s Domo</title>
+	<atom:link href="https://domo.easter.fr/category/bluetooth/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Mon, 11 Dec 2017 13:53:38 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>MiFlora v2</title>
+		<link>https://domo.easter.fr/2017/12/11/miflora-v2/</link>
+					<comments>https://domo.easter.fr/2017/12/11/miflora-v2/#respond</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 11 Dec 2017 13:50:00 +0000</pubDate>
+				<category><![CDATA[bluetooth]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[xiaomi]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=134</guid>
+
+					<description><![CDATA[Une petite mise à jour au niveau du script pour Miflora. Il y a eu des changements au niveau de la communication via bluetooth apparemment. Du coup le code à été mis à jour dans le dépôt github : https://github.com/open-homeautomation/miflora Il suffit de retourner à l&#8217;emplacement ou vous avez clone le dépôt la premiere fois [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Une petite mise à jour au niveau du script pour Miflora.</p>
+<p>Il y a eu des changements au niveau de la communication via bluetooth apparemment.</p>
+<p>Du coup le code à été mis à jour dans le dépôt github : https://github.com/open-homeautomation/miflora</p>
+<p>Il suffit de retourner à l&#8217;emplacement ou vous avez clone le dépôt la premiere fois et faire un :</p>
+<blockquote><p>git pull</p></blockquote>
+<p>J&rsquo;ai adapté le script en fonction :</p>
+<p>[pastacode lang= »python » user= »chatainsim » repos= »scripts_domoticz » path_id= »miflorav2.py » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Pour rappel, le premier script est <a href="https://domo.easter.fr/2017/02/09/mi-flower-et-domoticz/">ici</a> mais chez moi il ne semble plus fonctionner.</p>
+<p>Par contre il y a encore la mise en place en crontab qui peut être utile.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/12/11/miflora-v2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Mi Flower et Domoticz</title>
+		<link>https://domo.easter.fr/2017/02/09/mi-flower-et-domoticz/</link>
+					<comments>https://domo.easter.fr/2017/02/09/mi-flower-et-domoticz/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2017 14:15:30 +0000</pubDate>
+				<category><![CDATA[bluetooth]]></category>
+		<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[python]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=41</guid>
+
+					<description><![CDATA[Comment remonter les informations du Mi Flower dans Domoticz. Prérequis : python3 git bluez clé bluetooth (v4?) Il faut créer deux sensors virtuels, un pour la température et l&#8217;humidité et l&#8217;autre pour « l&#8217;engrais » Comme pour Vigicrues, il faut un Hardware Dummy puis la création de deux sensors virtuel. Pensez à récupérer les deux idx correspondant [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-42" src="https://domo.easter.fr/wp-content/uploads/2017/02/ico_miflora.png" alt="" width="491" height="184" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/ico_miflora.png 491w, https://domo.easter.fr/wp-content/uploads/2017/02/ico_miflora-300x112.png 300w" sizes="(max-width: 491px) 100vw, 491px" /></p>
+<p><img decoding="async" class="alignnone wp-image-44 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/mi-plant.jpeg" width="400" height="400" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/mi-plant.jpeg 400w, https://domo.easter.fr/wp-content/uploads/2017/02/mi-plant-150x150.jpeg 150w, https://domo.easter.fr/wp-content/uploads/2017/02/mi-plant-300x300.jpeg 300w" sizes="(max-width: 400px) 100vw, 400px" /></p>
+<p>Comment remonter les informations du Mi Flower dans Domoticz.</p>
+<p>Prérequis :</p>
+<ul>
+<li>python3</li>
+<li>git</li>
+<li>bluez</li>
+<li>clé bluetooth (v4?)</li>
+</ul>
+<p>Il faut créer deux sensors virtuels, un pour la température et l&rsquo;humidité et l&rsquo;autre pour « l&rsquo;engrais »</p>
+<p>Comme pour <a href="https://domo.easter.fr/?p=6">Vigicrues</a>, il faut un Hardware Dummy puis la création de deux sensors virtuel.</p>
+<p>Pensez à récupérer les deux idx correspondant aux sensors.</p>
+<p>&nbsp;</p>
+<p>Récupérer <a href="https://github.com/open-homeautomation/miflora">miflora</a>, la librairie pour lire le capteur bluetooth :</p>
+<p><code>git clone https://github.com/open-homeautomation/miflora.git</code></p>
+<p>Aller dans le répertoire miflora créé puis éditer le fichier demo.py ou créer un autre script à côté.</p>
+<p>Voici le code du script :</p>
+<p>[pastacode lang= »python » user= »chatainsim » repos= »scripts_domoticz » path_id= »miflora.py » revision= »master » highlight= » » lines= » » provider= »github »/]</p>
+<p>Il suffit de faire tourner le script en crontab toute les heures par exemples.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/02/09/mi-flower-et-domoticz/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:57:58 by W3 Total Cache
+-->

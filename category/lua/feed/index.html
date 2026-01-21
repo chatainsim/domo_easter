@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" >
+
+<channel>
+	<title>lua &#8211; Easter&#039;s Domo</title>
+	<atom:link href="https://domo.easter.fr/category/lua/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Fri, 04 Oct 2019 08:16:56 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>Octoprint et Domoticz</title>
+		<link>https://domo.easter.fr/2019/10/04/octoprint-et-domoticz/</link>
+					<comments>https://domo.easter.fr/2019/10/04/octoprint-et-domoticz/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 04 Oct 2019 07:55:30 +0000</pubDate>
+				<category><![CDATA[3DPrinting]]></category>
+		<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=224</guid>
+
+					<description><![CDATA[Un petit script lua pour récupérer les infos d&#8217;Octoprint dans Domoticz. Il vous faut 7 Dummy devices : OctoStatusIDX=&#8217;387&#8242; &#8212; type: Text pour afficher le status de l&#8217;imprimante OctoBebIDX=&#8217;388&#8242; &#8212; type: Temperature pour afficher la température du plateau OctoHeadIDX=&#8217;389&#8242; &#8212; type: Temperature pour afficher la température de la tête d&#8217;impression OctoTotalTimeIDX=&#8217;390&#8242; &#8212; type: Text pour [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Un petit script lua pour récupérer les infos d&rsquo;Octoprint dans Domoticz.</p>
+
+
+
+<figure class="wp-block-image is-resized"><img decoding="async" src="https://domo.easter.fr/wp-content/uploads/2019/10/Capture-du2019écran-2015-01-13-à-18.30.58.png" alt="" class="wp-image-225" width="225" height="189" srcset="https://domo.easter.fr/wp-content/uploads/2019/10/Capture-du2019écran-2015-01-13-à-18.30.58.png 458w, https://domo.easter.fr/wp-content/uploads/2019/10/Capture-du2019écran-2015-01-13-à-18.30.58-300x252.png 300w" sizes="(max-width: 225px) 100vw, 225px" /></figure>
+
+
+
+<p class="wp-block-paragraph">Il vous faut 7 Dummy devices :</p>
+
+
+
+<ul class="wp-block-list"><li>OctoStatusIDX=&rsquo;387&prime; &#8212; type: Text pour afficher le status de l&rsquo;imprimante</li><li>OctoBebIDX=&rsquo;388&prime; &#8212; type: Temperature pour afficher la température du plateau</li><li>OctoHeadIDX=&rsquo;389&prime; &#8212; type: Temperature pour afficher la température de la tête d&rsquo;impression</li><li>OctoTotalTimeIDX=&rsquo;390&prime; &#8212; type: Text pour le temps total d&rsquo;impression</li><li>OctoCompleteIDX=&rsquo;391&prime; &#8212; type: Percentage pour le pourcentage d&rsquo;avancement</li><li>OctoPrintTimeIDX=&rsquo;392&prime; &#8212; type: Text pour la durée d&rsquo;impression passé</li><li>OctoTimeLeftIDX=&rsquo;393&prime; &#8212; type: Text pour le temps restant.</li></ul>
+
+
+
+<p class="wp-block-paragraph">Dans les paramètres du script, il faut modifier les IDX de ces devices lignes 14 à 20.</p>
+
+
+
+<p class="wp-block-paragraph">Renseigner l&rsquo;IP d&rsquo;Octoprint ligne 5, la clé API d&rsquo;Octoprint ligne 7.</p>
+
+
+
+<p class="wp-block-paragraph">Et enfin, si différent, l&#8217;emplacement du script JSON.lua et de curl, lignes 9 et 11.</p>
+
+
+
+<p class="wp-block-paragraph">Le script est disponible ici : <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/octoprint.lua">https://github.com/chatainsim/scripts_domoticz/blob/master/octoprint.lua</a></p>
+
+
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »octoprint.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+
+
+
+<figure class="wp-block-image"><img fetchpriority="high" decoding="async" width="797" height="148" src="https://domo.easter.fr/wp-content/uploads/2019/10/octo-temp.png" alt="" class="wp-image-231" srcset="https://domo.easter.fr/wp-content/uploads/2019/10/octo-temp.png 797w, https://domo.easter.fr/wp-content/uploads/2019/10/octo-temp-300x56.png 300w, https://domo.easter.fr/wp-content/uploads/2019/10/octo-temp-768x143.png 768w" sizes="(max-width: 797px) 100vw, 797px" /><figcaption>Température du plateau et de la tête.</figcaption></figure>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="1024" height="349" src="https://domo.easter.fr/wp-content/uploads/2019/10/octo-status-1024x349.png" alt="" class="wp-image-232" srcset="https://domo.easter.fr/wp-content/uploads/2019/10/octo-status-1024x349.png 1024w, https://domo.easter.fr/wp-content/uploads/2019/10/octo-status-300x102.png 300w, https://domo.easter.fr/wp-content/uploads/2019/10/octo-status-768x262.png 768w, https://domo.easter.fr/wp-content/uploads/2019/10/octo-status.png 1261w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Status de l&rsquo;imprimante et des temps d&rsquo;impression ainsi que le pourcentage d&rsquo;avancement.</figcaption></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2019/10/04/octoprint-et-domoticz/feed/</wfw:commentRss>
+			<slash:comments>37</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Script de surveillance de capteurs</title>
+		<link>https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/</link>
+					<comments>https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 07 Sep 2018 22:19:56 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=203</guid>
+
+					<description><![CDATA[Un post rapide pour partager un script qui permet de signaler quand un capteur ne répond plus après un certain temps. Pratique quand on a pas tout le temps le nez devant Domoticz et qu&#8217;une pile est arrivée en fin de vie sur un capteur sans fil. Il faut ajouter les capteurs à surveiller à [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Un post rapide pour partager un script qui permet de signaler quand un capteur ne répond plus après un certain temps.</p>
+<p>Pratique quand on a pas tout le temps le nez devant Domoticz et qu&rsquo;une pile est arrivée en fin de vie sur un capteur sans fil.</p>
+<p>Il faut ajouter les capteurs à surveiller à partir de la ligne 16 et rajouter un ligne par capteur avec la durée en seconde :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »deadsensors.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Détection de pluie et pluviomètre</title>
+		<link>https://domo.easter.fr/2018/09/08/detection-de-pluie-et-pluviometre/</link>
+					<comments>https://domo.easter.fr/2018/09/08/detection-de-pluie-et-pluviometre/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 07 Sep 2018 22:08:03 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[z-wave]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=187</guid>
+
+					<description><![CDATA[J&#8217;ai cherché pour avoir une notification lorsqu&#8217;il pleut et pourquoi pas avoir la pluviométrie mais je n&#8217;ai rien trouvé qui correspondait à mes attentes. Les modèles en RF433 Mhz semblent bien mais mon RFLink ne fonctionne pas très bien faute de temps pour corriger mon problème d&#8217;antenne. J&#8217;ai bien trouvé un pluviomètre en Z-wave chez [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>J&rsquo;ai cherché pour avoir une notification lorsqu&rsquo;il pleut et pourquoi pas avoir la pluviométrie mais je n&rsquo;ai rien trouvé qui correspondait à mes attentes.</p>
+<p>Les modèles en RF433 Mhz semblent bien mais mon RFLink ne fonctionne pas très bien faute de temps pour corriger mon problème d&rsquo;antenne.</p>
+<p>J&rsquo;ai bien trouvé un pluviomètre en Z-wave chez Popp mais il a quelques limitation.</p>
+<p>J&rsquo;ai fini par faire ma propre tambouille avec <a href="https://amzn.to/2M7Kuye">un détecteur universelle de chez Fibaro</a>, <a href="https://www.lextronic.fr/temperature-meteo/27641-capteur-pluviometre.html">un pluviomètre</a>, <a href="https://amzn.to/2NUgqaU">un détecteur de pluie</a>, <a href="https://amzn.to/2NWUtYN">une alimentation 12v</a>, <a href="https://amzn.to/2wVpk1m">des connecteurs Wago</a> et <a href="https://www.lextronic.fr/boitiers-etanches/22394-boitier-etanche-avec-3-presses-etoupes.html?search_query=OB12&amp;fast_search=fs">un boitier étanche</a>.</p>
+<p>J&rsquo;ai aussi raccordé une <a href="https://amzn.to/2O02kET">sonde DS18B20</a> histoire d&rsquo;avoir la température en plus.</p>
+<p>Le détecteur universelle de Fibaro permet de connecter des contacts sec en entrée, nous n&rsquo;utiliserons pas les sorties.</p>
+<p>Le principe est simple, pour le détecteur de pluie a chaque fois que le capteur reçoit de la pluie, il active un contact sec, il s&rsquo;agit de la même chose pour le pluviomètre, à chaque fois que le godet bascule, il active un contact sec.</p>
+<p>Voici le câblage :</p>
+<p><img decoding="async" class="alignnone size-full wp-image-192" src="https://domo.easter.fr/wp-content/uploads/2018/09/pluvio_fibaro-e1536356822208.png" alt="" width="659" height="387" srcset="https://domo.easter.fr/wp-content/uploads/2018/09/pluvio_fibaro-e1536356822208.png 659w, https://domo.easter.fr/wp-content/uploads/2018/09/pluvio_fibaro-e1536356822208-300x176.png 300w" sizes="(max-width: 659px) 100vw, 659px" /></p>
+<p>Je n&rsquo;ai pas inclus la sonde DS18B20 pour ne pas surchargé le dessin.</p>
+<p>Et enfin, inclusion dans Domoticz en appuyant 3 fois rapidement sur le bouton B du détecteur universelle.</p>
+<p>Nous avons maintenant deux nouveaux interrupteurs dans Domoticz, un pour la détecteur de pluie et l&rsquo;autre pour le pluviomètre.</p>
+<p>Il faut maintenant modifier le type de contact du module Z-Wave.</p>
+<p>Pour cela, il faut aller dans Réglages -&gt; Matériel. Puis cliquer sur Réglages de votre adaptateur Z-Wave :</p>
+<p><img decoding="async" class="alignnone size-full wp-image-193" src="https://domo.easter.fr/wp-content/uploads/2018/09/reglages_zwave.png" alt="" width="276" height="42" /></p>
+<p>Puis sélectionner le module FGBS001 et modifier les paramètres 3 et 4 en Input NO (Normal Open) :</p>
+<p><img decoding="async" class="alignnone size-full wp-image-194" src="https://domo.easter.fr/wp-content/uploads/2018/09/no.png" alt="" width="253" height="167" /></p>
+<p>Pour le détecteur de pluie, rien à faire de particulier si ce n&rsquo;est activer les notifications quand il passe à ON.</p>
+<p>Pour le pluviomètre, nous n&rsquo;avons qu&rsquo;un simple interrupteur qui passe à ON à chaque bascule du godet, il faut maintenant que cette bascule se transforme en mm de pluie.</p>
+<p>Il faut donc créer un capteur virtuel dans un Matériel de type Dummy :</p>
+<p><img decoding="async" class="alignnone size-full wp-image-196" src="https://domo.easter.fr/wp-content/uploads/2018/09/virtual_dummy.png" alt="" width="638" height="37" srcset="https://domo.easter.fr/wp-content/uploads/2018/09/virtual_dummy.png 638w, https://domo.easter.fr/wp-content/uploads/2018/09/virtual_dummy-300x17.png 300w" sizes="(max-width: 638px) 100vw, 638px" /></p>
+<p>Et choisir Type de capteur : Précipitations</p>
+<p><img decoding="async" class="alignnone size-full wp-image-197" src="https://domo.easter.fr/wp-content/uploads/2018/09/precipit.png" alt="" width="425" height="247" srcset="https://domo.easter.fr/wp-content/uploads/2018/09/precipit.png 425w, https://domo.easter.fr/wp-content/uploads/2018/09/precipit-300x174.png 300w" sizes="(max-width: 425px) 100vw, 425px" /></p>
+<p>Puis créer un nouveau script de type DzVents / Device en modifiant la ligne 4 et la ligne 12 avec le nom de votre interrupteur créer par le détecteur universelle.</p>
+<p>Ainsi que la ligne 11 avec le non de votre capteur virtuel.</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »rainfall.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Si vous n&rsquo;utilisez pas le même pluviomètre que moi, il faut modifier la valeur ligne 13 avec la valeur du godet.</p>
+<p>Et voilà <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/09/08/detection-de-pluie-et-pluviometre/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Avoir une notification lorsque le lave-linge a terminé</title>
+		<link>https://domo.easter.fr/2018/05/11/avoir-une-notification-lorsque-le-lave-linge-a-termine/</link>
+					<comments>https://domo.easter.fr/2018/05/11/avoir-une-notification-lorsque-le-lave-linge-a-termine/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 11 May 2018 13:46:24 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[z-wave]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=176</guid>
+
+					<description><![CDATA[Il s&#8217;agit en gros d&#8217;une traduction de cet article : https://www.gadget-freakz.com/2018/05/script-your-dryver-or-washingmachine/ Pour utiliser ce script, il faut avoir une prise connectée qui remonte la consommation en temps réel. J&#8217;utilise la même prise que Gadget-freaks, la Neo Coolcam que l&#8217;on trouve à bas prix chez Gearbest : https://gearbest.com/home-gadgets/pp_581312.html?lkid=13669905 (lien sponsorisé de Gadget-Freakz) Il faut dans un [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Il s&rsquo;agit en gros d&rsquo;une traduction de cet article : <a href="https://www.gadget-freakz.com/2018/05/script-your-dryver-or-washingmachine/" target="_blank" rel="noopener">https://www.gadget-freakz.com/2018/05/script-your-dryver-or-washingmachine/</a></p>
+<p>Pour utiliser ce script, il faut avoir une prise connectée qui remonte la consommation en temps réel.</p>
+<p>J&rsquo;utilise la même prise que Gadget-freaks, la Neo Coolcam que l&rsquo;on trouve à bas prix chez Gearbest : <a href="https://gearbest.com/home-gadgets/pp_581312.html?lkid=13669905" target="_blank" rel="noopener">https://gearbest.com/home-gadgets/pp_581312.html?lkid=13669905 </a>(lien sponsorisé de Gadget-Freakz)</p>
+<p><img decoding="async" class="alignnone size-full wp-image-178" src="https://domo.easter.fr/wp-content/uploads/2018/05/1522168677121294204.jpg" alt="" width="100" height="100" /></p>
+<p>Il faut dans un premier temps créer deux variables utilisateur :</p>
+<p>washingmachine_status &amp; washingmachine_counter au format Interger avec zéro comme valeur lors de la création.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-177" src="https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu.png" alt="" width="1168" height="73" srcset="https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu.png 1168w, https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu-300x19.png 300w, https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu-768x48.png 768w, https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu-1024x64.png 1024w" sizes="(max-width: 1168px) 100vw, 1168px" /></p>
+<p>Et créer le script en question au format lua (Lua/Time) :</p>
+<p>En changeant le nom de votre prise connectée :</p>
+<p><span class="pl-k">local</span> energy_consumption <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&lsquo;</span><em><strong>Zwave LaveLinge</strong></em><span class="pl-pds">&lsquo;</span></span></p>
+<p>[pastacode lang= »markup » user= »chatainsim » repos= »scripts_domoticz » path_id= »script_time_wasmachine.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Et voilà.</p>
+<p>&nbsp;</p>
+<p>Merci à Gadget-Freakz</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/05/11/avoir-une-notification-lorsque-le-lave-linge-a-termine/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Motion v2.2</title>
+		<link>https://domo.easter.fr/2018/04/27/motion-v2-2/</link>
+					<comments>https://domo.easter.fr/2018/04/27/motion-v2-2/#respond</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 27 Apr 2018 08:27:04 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[light]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[xiaomi]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=167</guid>
+
+					<description><![CDATA[Un mini post pour signaler la mise à jour du script Motion (éclairage sur détection de mouvement). J&#8217;ai simplement enlevé la partie extinction avec délai car cela générait des problèmes. A savoir si quelqu&#8217;un repasse devant le détecteur entre la fin de mouvement et l&#8217;extinction de la lampe, elle ne se rallume pas. [pastacode lang= »c » [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Un mini post pour signaler la mise à jour du script Motion (éclairage sur détection de mouvement).</p>
+<p>J&rsquo;ai simplement enlevé la partie extinction avec délai car cela générait des problèmes.</p>
+<p>A savoir si quelqu&rsquo;un repasse devant le détecteur entre la fin de mouvement et l&rsquo;extinction de la lampe, elle ne se rallume pas.</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motionv2.2.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/04/27/motion-v2-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Vigicrue v3 beta</title>
+		<link>https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/</link>
+					<comments>https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 12 Jan 2018 22:40:04 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[notification]]></category>
+		<category><![CDATA[Vigicrue]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=143</guid>
+
+					<description><![CDATA[Voici une nouvelle version pour le script Vigicrue. Suite à une demande de balajol sur le forum d&#8217;easydomoticz, j&#8217;ai rajouter la possibilité d&#8217;être notifié. J&#8217;ai fait le test de mettre une notification sur le sensor Domoticz et ça ne semble pas fonctionner. Du coup je l&#8217;ai ajouté dans le script, j&#8217;ai modifié la façon de [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="alignnone wp-image-9 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png" alt="" width="983" height="181" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png 983w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-300x55.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-768x141.png 768w" sizes="(max-width: 983px) 100vw, 983px" /></p>
+<p>Voici une nouvelle version pour le script Vigicrue.</p>
+<p>Suite à une demande de <a href="http://easydomoticz.com/forum/memberlist.php?mode=viewprofile&amp;u=794">balajol</a> sur le forum d&rsquo;<a href="http://easydomoticz.com/forum/viewtopic.php?f=17&amp;t=5484&amp;start=10#p46650">easydomoticz</a>, j&rsquo;ai rajouter la possibilité d&rsquo;être notifié.</p>
+<p>J&rsquo;ai fait le test de mettre une notification sur le sensor Domoticz et ça ne semble pas fonctionner.</p>
+<p>Du coup je l&rsquo;ai ajouté dans le script, j&rsquo;ai modifié la façon de le configurer aussi.</p>
+<p>Dans un premier temps, il faut construire le fichier de configuration au format json.</p>
+<p>J&rsquo;ai mis sur github trois fichiers de conf différents pour le moment, <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/vigicrue/conf_samples/vigicrue_1_station.json">un pour une station</a>, <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/vigicrue/conf_samples/vigicrue_2_station.json">un pour deux stations</a> et <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/vigicrue/conf_samples/vigicrue_3_station.json">pour trois stations</a>.</p>
+<p>Si vous voulez une exemple de fichier de conf pour plus de deux stations, je peux vous le faire, demandez moi.</p>
+<p>&nbsp;</p>
+<p>Voici à quoi un fichier de configuration ressemble (je pars sur le deux stations comme c&rsquo;est celui que j&rsquo;utilise) :</p>
+<p>[pastacode lang= »markup » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue/conf_samples/vigicrue_2_station.json » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Il faut mettre le fichier de conf a un endroit accessible par Domoticz, je l&rsquo;ai mis dans <strong>/opt/domoticz/scripts</strong> mais vous pouvez le mettre ailleurs du moment que Domoticz a les droits pour le lire.</p>
+<p>Une précision, dans la partie notification, la valeur <strong>test</strong> ne sert à rien pour l&rsquo;instant mais je compte l&rsquo;utiliser pour choisir le mode de test, plus grand que, plus grand ou equal, plus petit, etc &#8230;</p>
+<p>Dites moi si c&rsquo;est pertinant ou si le plus grand que suffit.</p>
+<p>Dans notification, <strong>value</strong> permet de définir le seuil, par exemple si le niveau d&rsquo;eau dépasse 2 métres ou 500 m3/s et <strong>active</strong> pour activer ou non la notification (true ou false).</p>
+<p>&nbsp;</p>
+<p>Voici le script lua, catégorie lua -&gt; time :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue/vigicrue.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Les modifications a apporter au script sont les quatre premières variables, à savoir :</p>
+<p><strong>debug</strong> : Pour activer le mode debug qui affiche plus d&rsquo;info (pas encore optimisé pour la v3)</p>
+<p><strong>config</strong> : Emplacement de votre fichier json de configuration</p>
+<p><strong>json</strong> : Emplacement de votre fichier JSON.lua</p>
+<p><strong>curl</strong> : Chemin complet vers votre binaire curl</p>
+<p>&nbsp;</p>
+<p>Pour le moment il faut modifier les commandes de notification manuellement :</p>
+<p>[pastacode lang= »c » manual= »commandArray%5B&rsquo;SendNotification&rsquo;%5D%3D&rsquo;Water%20level%20is%20high%20for%20station%20&prime;..StationName..&rsquo;%23Current%20level%20is%20&prime;..ResultHeight%5B%23ResultHeight%5D%5B2%5D..&rsquo;m%20for%20&prime;..StationName..&rsquo;%230%23sound%23extradata%23telegram&rsquo;%0AcommandArray%5B&rsquo;SendNotification&rsquo;%5D%3D&rsquo;Water%20speed%20level%20is%20high%20for%20station%20&prime;..StationName..&rsquo;%23Current%20speed%20level%3A%20&prime;..ResultSpeed%5B%23ResultSpeed%5D%5B2%5D..&rsquo;m3%2Fs%20for%20&prime;..StationName..&rsquo;%230%23sound%23extradata%23telegram' » message= » » highlight= » » provider= »manual »/]</p>
+<p>Pour définir le type de notification, ici j&rsquo;utilise telegram.</p>
+<p>Mais je compte rajouter ça dans le fichier de conf prochainement.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/feed/</wfw:commentRss>
+			<slash:comments>17</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Vigicrue V2</title>
+		<link>https://domo.easter.fr/2017/12/11/vigicrue-v2/</link>
+					<comments>https://domo.easter.fr/2017/12/11/vigicrue-v2/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 11 Dec 2017 13:06:25 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[Vigicrue]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=128</guid>
+
+					<description><![CDATA[Une v3 viens de sortir, ici. Le site de Vigicrue a changé. Maintenant il utilise du json pour les données. Un changement qui permet de simplifier tout ça en un seul script lua directement dans Domoticz : [pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue2.lua » revision= » » highlight= » » lines= » » provider= »github »/] Il suffit de modifier le début du script pour [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Une v3 viens de sortir, <a href="https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/">ici</a>.</p>
+<p>Le site de Vigicrue a changé. Maintenant il utilise du json pour les données.</p>
+<p>Un changement qui permet de simplifier tout ça en un seul script lua directement dans Domoticz :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue2.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Il suffit de modifier le début du script pour ajouter les ID des stations (<a href="https://domo.easter.fr/2017/02/09/vigicrue-et-domoticz/">je vous renvoi sur cette article pour trouver les IDs</a>).</p>
+<p>Les variables SIDXHeight et SIDXSpeed permettent de définir les IDX des sensors Domoticz et sont des tableaux.</p>
+<p>La clé correspond à l&rsquo;ID de la station et la valeur à l&rsquo;IDX Domoticz.</p>
+<p>Il faut aussi vérifier l&#8217;emplacement de votre fichier JSON.lua qui n&rsquo;est pas forcement dans /opt/domoticz/scripts/lua.</p>
+<p>Amusez-vous bien.</p>
+<p>[EDIT] J&rsquo;ai rajouté une vérification dans le cas ou Vigicrue ne retourne pas de données pour ne pas sortir une erreur dans les logs.</p>
+<p>Merci à <span class="responsive-hide"><a href="https://easydomoticz.com/forum/viewtopic.php?f=17&amp;t=5484&amp;p=46325"><strong>lamouette </strong></a>sur le forum d&rsquo;easydomoticz de m&rsquo;avoir remonter ce cas.</span></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/12/11/vigicrue-v2/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Détecteur de mouvement v2 et v2.1</title>
+		<link>https://domo.easter.fr/2017/11/27/detecteur-de-mouvement-v2/</link>
+					<comments>https://domo.easter.fr/2017/11/27/detecteur-de-mouvement-v2/#respond</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 27 Nov 2017 21:44:16 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[light]]></category>
+		<category><![CDATA[lua]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=110</guid>
+
+					<description><![CDATA[Une petite mise à jour du script de détection de mouvement qui allume une lampe sur détection de mouvement. Le voici : [pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motionv2.lua » revision= » » highlight= » » lines= » » provider= »github »/] Il y a deux différences. La première, je n&#8217;utilise plus timeofday[&#8216;Nighttime&#8216;] car en période d&#8217;hiver, la lampe s&#8217;éclaire faiblement au alentour de 17h du [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="alignnone wp-image-64 size-large" src="https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-1024x205.png" alt="" width="812" height="163" srcset="https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-1024x205.png 1024w, https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-300x60.png 300w, https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-768x154.png 768w, https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua.png 1864w" sizes="(max-width: 812px) 100vw, 812px" /></p>
+<p>Une petite mise à jour du <a href="https://domo.easter.fr/2017/06/26/detecteur-de-mouvement-lumiere-et-domoticz/">script de détection de mouvement</a> qui allume une lampe sur détection de mouvement.</p>
+<p>Le voici :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motionv2.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Il y a deux différences. La première, je n&rsquo;utilise plus <em>timeofday[<span class="pl-s"><span class="pl-pds">&lsquo;</span>Nighttime<span class="pl-pds">&lsquo;</span></span>]</em> car en période d&rsquo;hiver, la lampe s&rsquo;éclaire faiblement au alentour de 17h du coup ce n&rsquo;est pas pratique.</p>
+<p>J&rsquo;ai donc définis moi même les heures avec les variables <em>morning</em> et <em>night</em>.</p>
+<p>Du coup la lampe ne s&rsquo;éclaire faiblement qu&rsquo;entre 23h et 5h du matin. A vous de les changer en fonction.</p>
+<p>Deuxième changement, je défini le nom du détecteur de mouvement et de la lampe une seule fois au début du script, comme ça s&rsquo;il change j&rsquo;ai juste à changer le variable <em>motion_sensor</em> et <em>light_bulb</em> en fonction et je n&rsquo;ai pas besoin de reparcourir tout le script.</p>
+<p>EDIT: Voici une v2.1 :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motionv2.1.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>J&rsquo;ai rajouté la variable nolight qui permet de spécifier à partir de quelle heure la lampe ne s&rsquo;allume plus la nuit.</p>
+<p>Dans mon cas, la lampe ne s&rsquo;allume plus entre 1h du matin et 6h.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/11/27/detecteur-de-mouvement-v2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Xiaomi switch et Domoticz</title>
+		<link>https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/</link>
+					<comments>https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 28 Jul 2017 13:42:09 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[xiaomi]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=76</guid>
+
+					<description><![CDATA[J&#8217;ai pas mal de module Xiaomi en plus de la passerelle, notamment des boutons ronds. Ils ont trois possibilités d&#8217;actions : clique, double clique et clique long. J&#8217;ai aussi une prise commandée Xiaomi et j&#8217;ai écris un petit script lua pour gérer celle ci avec le bouton Xiaomi. Cela me permet de contrôler mon micro-onde [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>J&rsquo;ai pas mal de module Xiaomi en plus de la passerelle, notamment des boutons ronds.</p>
+<p>Ils ont trois possibilités d&rsquo;actions : clique, double clique et clique long.</p>
+<p>J&rsquo;ai aussi une prise commandée Xiaomi et j&rsquo;ai écris un petit script lua pour gérer celle ci avec le bouton Xiaomi.</p>
+<p>Cela me permet de contrôler mon micro-onde qui n&rsquo;est pas tout jeune. Je l&rsquo;utilise pour réchauffer des petits pots par exemple.</p>
+<p>Un clique active le micro-onde pendant 10 secondes, le double clique pendant 30 secondes et le clique long pendant 2 minutes.</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »xiaomi_switch.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Clique !</p>
+<p>J&rsquo;en ai un autre pour gérer les lumières aussi, si vous êtes intéressés, faites moi signe !</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/07/28/xiaomi-switch-et-domoticz/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Portes ouvertes, notification et Domoticz</title>
+		<link>https://domo.easter.fr/2017/07/28/portes-ouvertes-notification-et-domoticz/</link>
+					<comments>https://domo.easter.fr/2017/07/28/portes-ouvertes-notification-et-domoticz/#respond</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 28 Jul 2017 12:59:35 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=74</guid>
+
+					<description><![CDATA[Un petit script lua qui vous notifie lorsqu&#8217;une porte reste ouverte pendant X minutes. [pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »door.lua » revision= » » highlight= » » lines= » » provider= »github »/] &#160;]]></description>
+										<content:encoded><![CDATA[<p>Un petit script lua qui vous notifie lorsqu&rsquo;une porte reste ouverte pendant X minutes.</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »door.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/07/28/portes-ouvertes-notification-et-domoticz/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:56:32 by W3 Total Cache
+-->

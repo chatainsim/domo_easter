@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" >
+
+<channel>
+	<title>nodemcu &#8211; Easter&#039;s Domo</title>
+	<atom:link href="https://domo.easter.fr/category/nodemcu/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Thu, 11 Jun 2020 09:51:01 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>Porte de poulailler connectée</title>
+		<link>https://domo.easter.fr/2020/06/02/porte-de-poulailler-connectee/</link>
+					<comments>https://domo.easter.fr/2020/06/02/porte-de-poulailler-connectee/#respond</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Tue, 02 Jun 2020 16:18:58 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[nodemcu]]></category>
+		<category><![CDATA[arduino]]></category>
+		<category><![CDATA[domoticz]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=245</guid>
+
+					<description><![CDATA[A la fin du confinement, on a fait l’acquisition de deux poules pondeuses. Elles logent dans un poulailler avec une porte coulissante. J&#8217;ai vu pas mal de tutos pour gérer des portes de types « guillotines » mais rien de vraiment concrets pour les portes coulissantes. J&#8217;ai donc pas mal réfléchis aux solutions possibles et le poulailler [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">A la fin du confinement, on a fait l’acquisition de deux poules pondeuses. Elles logent dans un poulailler avec une porte coulissante.</p>
+
+
+
+<p class="wp-block-paragraph">J&rsquo;ai vu pas mal de tutos pour gérer des portes de types « guillotines » mais rien de vraiment concrets pour les portes coulissantes.</p>
+
+
+
+<p class="wp-block-paragraph">J&rsquo;ai donc pas mal réfléchis aux solutions possibles et le poulailler ne me permettant pas de monter la porte, j&rsquo;ai gardé le système coulissant.</p>
+
+
+
+<p class="wp-block-paragraph">Pour cela j&rsquo;ai utilisé un nodeMCU, un pont en H et un actionneur linéaire.</p>
+
+
+
+<figure class="wp-block-gallery columns-3 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img fetchpriority="high" decoding="async" width="256" height="256" src="https://domo.easter.fr/wp-content/uploads/2020/06/42aa159d9d30eb3f26f2ed17034c0a3b.jpg" alt="" data-id="247" data-full-url="https://domo.easter.fr/wp-content/uploads/2020/06/42aa159d9d30eb3f26f2ed17034c0a3b.jpg" data-link="https://domo.easter.fr/?attachment_id=247" class="wp-image-247" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/42aa159d9d30eb3f26f2ed17034c0a3b.jpg 256w, https://domo.easter.fr/wp-content/uploads/2020/06/42aa159d9d30eb3f26f2ed17034c0a3b-150x150.jpg 150w" sizes="(max-width: 256px) 100vw, 256px" /><figcaption class="blocks-gallery-item__caption">NodeMCU</figcaption></figure></li><li class="blocks-gallery-item"><figure><img decoding="async" width="256" height="256" src="https://domo.easter.fr/wp-content/uploads/2020/06/799033398805515.jpg" alt="" data-id="246" data-full-url="https://domo.easter.fr/wp-content/uploads/2020/06/799033398805515.jpg" data-link="https://domo.easter.fr/?attachment_id=246" class="wp-image-246" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/799033398805515.jpg 256w, https://domo.easter.fr/wp-content/uploads/2020/06/799033398805515-150x150.jpg 150w" sizes="(max-width: 256px) 100vw, 256px" /><figcaption class="blocks-gallery-item__caption">L298N</figcaption></figure></li><li class="blocks-gallery-item"><figure><img decoding="async" width="256" height="256" src="https://domo.easter.fr/wp-content/uploads/2020/06/laa-35105.png" alt="" data-id="248" data-full-url="https://domo.easter.fr/wp-content/uploads/2020/06/laa-35105.png" data-link="https://domo.easter.fr/?attachment_id=248" class="wp-image-248" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/laa-35105.png 256w, https://domo.easter.fr/wp-content/uploads/2020/06/laa-35105-150x150.png 150w" sizes="(max-width: 256px) 100vw, 256px" /><figcaption class="blocks-gallery-item__caption">Linear actuator</figcaption></figure></li></ul></figure>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<p class="wp-block-paragraph">Le nodeMCU va servir une page web avec deux liens, un pour l&rsquo;ouverture, l&rsquo;autre pour la &#8230; fermeture. Il remontera l&rsquo;info à Domoticz via un appel de l&rsquo;API. Le pont en H sert a inverser la polarité pour faire avancer ou reculer le moteur.</p>
+</div></div>
+</div></div>
+</div></div>
+</div></div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="716" src="https://domo.easter.fr/wp-content/uploads/2020/06/Sketch_nodeLinear-1-1024x716.png" alt="" class="wp-image-277" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/Sketch_nodeLinear-1-1024x716.png 1024w, https://domo.easter.fr/wp-content/uploads/2020/06/Sketch_nodeLinear-1-300x210.png 300w, https://domo.easter.fr/wp-content/uploads/2020/06/Sketch_nodeLinear-1-768x537.png 768w, https://domo.easter.fr/wp-content/uploads/2020/06/Sketch_nodeLinear-1-1536x1074.png 1536w, https://domo.easter.fr/wp-content/uploads/2020/06/Sketch_nodeLinear-1.png 1771w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>Les connexions</figcaption></figure>
+</div></div>
+
+
+
+<p class="wp-block-paragraph">Le code arduino à pousser sur le nodeMCU</p>
+
+
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »nodemcu/linear_actuator.ino » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+
+
+
+<p class="wp-block-paragraph">Il faudra modifier le ssid de votre wifi, ainsi que son mot de passe aux lignes 18 &amp; 19.</p>
+
+
+
+<p class="wp-block-paragraph">Dans Domoticz, il faudra créer deux interrupteurs virtuels, un pour l&rsquo;ouverture et la fermeture et l&rsquo;autre pour avoir le statut de la poste.</p>
+
+
+
+<figure class="wp-block-gallery columns-2 is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img decoding="async" width="394" height="134" src="https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_27_18-Window.png" alt="" data-id="256" data-full-url="https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_27_18-Window.png" data-link="https://domo.easter.fr/?attachment_id=256" class="wp-image-256" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_27_18-Window.png 394w, https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_27_18-Window-300x102.png 300w" sizes="(max-width: 394px) 100vw, 394px" /></figure></li><li class="blocks-gallery-item"><figure><img decoding="async" width="392" height="130" src="https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_27_28-Window.png" alt="" data-id="257" data-full-url="https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_27_28-Window.png" data-link="https://domo.easter.fr/?attachment_id=257" class="wp-image-257" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_27_28-Window.png 392w, https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_27_28-Window-300x99.png 300w" sizes="(max-width: 392px) 100vw, 392px" /></figure></li></ul></figure>
+
+
+
+<p class="wp-block-paragraph">Il faut récupérer l&rsquo;IDX de la porte pour le renseigner aux lignes 84 &amp; 90 à la place du mien qui est 475. Oui je sais, c&rsquo;est crade mais j&rsquo;ai fais vite.</p>
+
+
+
+<p class="wp-block-paragraph">Lors de l&rsquo;ouverture ou de la fermeture de la porte, le statut de Porte poulailler sera mis à jour par le nodeMCU.</p>
+
+
+
+<p class="wp-block-paragraph">Pour la passer en mode Porte, il faut l&rsquo;éditer et changer type par Door Contact :</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="379" height="169" src="https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_32_06-door.png" alt="" class="wp-image-259" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_32_06-door.png 379w, https://domo.easter.fr/wp-content/uploads/2020/06/2020-06-02-12_32_06-door-300x134.png 300w" sizes="(max-width: 379px) 100vw, 379px" /></figure>
+
+
+
+<p class="wp-block-paragraph">Pour l&rsquo;interrupteur Poules, qui commande la porte, il faut l&rsquo;éditer et renseigner les deux urls suivante :</p>
+
+
+
+<p class="wp-block-paragraph">Action On : http://xxx.xxx.xxx.xxx/?a=1</p>
+
+
+
+<p class="wp-block-paragraph">Action Off : http://xxx.xxx.xxx.xxx/?a=2</p>
+
+
+
+<p class="wp-block-paragraph">En remplacent l&rsquo;adresse IP par celle de votre nodeMCU, il faudra donc lui attribuer une IP fixe.</p>
+
+
+
+<figure class="wp-block-gallery columns-2 is-cropped wp-block-gallery-3 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img decoding="async" width="1024" height="766" src="https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-1024x766.jpg" alt="" data-id="265" data-link="https://domo.easter.fr/?attachment_id=265" class="wp-image-265" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-1024x766.jpg 1024w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-300x224.jpg 300w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-768x574.jpg 768w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-1536x1149.jpg 1536w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-2048x1532.jpg 2048w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174640-3-600x450.jpg 600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="blocks-gallery-item__caption">La porte coulissante</figcaption></figure></li><li class="blocks-gallery-item"><figure><img decoding="async" width="1024" height="768" src="https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174627-1024x768.jpg" alt="" data-id="261" data-link="https://domo.easter.fr/?attachment_id=261" class="wp-image-261" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174627-1024x768.jpg 1024w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174627-300x225.jpg 300w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174627-768x576.jpg 768w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174627-1536x1152.jpg 1536w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174627-2048x1536.jpg 2048w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174627-600x450.jpg 600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="blocks-gallery-item__caption">Oui, c&rsquo;est tout en vrac</figcaption></figure></li></ul></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="768" src="https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174635-1024x768.jpg" alt="" class="wp-image-271" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174635-1024x768.jpg 1024w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174635-300x225.jpg 300w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174635-768x576.jpg 768w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174635-1536x1152.jpg 1536w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174635-600x450.jpg 600w, https://domo.easter.fr/wp-content/uploads/2020/06/IMG_20200531_174635.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>L&rsquo;actionneur linéaire est dans le PVC de 80, avec un fond de bouteille pour la pluie.<br>De la récup&rsquo;,</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="576" src="https://domo.easter.fr/wp-content/uploads/2020/06/Poulailler_2020-05-31_212944.jpg" alt="" class="wp-image-274" srcset="https://domo.easter.fr/wp-content/uploads/2020/06/Poulailler_2020-05-31_212944.jpg 1024w, https://domo.easter.fr/wp-content/uploads/2020/06/Poulailler_2020-05-31_212944-300x169.jpg 300w, https://domo.easter.fr/wp-content/uploads/2020/06/Poulailler_2020-05-31_212944-768x432.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>J&rsquo;en ai profité pour mettre une caméra IP pour les surveiller !</figcaption></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2020/06/02/porte-de-poulailler-connectee/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Pluviomètre</title>
+		<link>https://domo.easter.fr/2019/09/02/pluviometre/</link>
+					<comments>https://domo.easter.fr/2019/09/02/pluviometre/#respond</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 02 Sep 2019 08:24:42 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[nodemcu]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=214</guid>
+
+					<description><![CDATA[Bon, finalement le module Fibaro FGBS-001 ne semble plus fonctionner. Plus de remonté de la température ni du pluviomètre ou du détecteur de pluie. J&#8217;ai donc décider de passer sur un NodeMCU. J&#8217;ai un NodeMCU pour gérer le pluviomètre et le détecteur de pluie, je verrais pour la sonde de température DS18B20 plus tard. Le [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Bon, finalement le module Fibaro FGBS-001 ne semble plus fonctionner.</p>
+
+
+
+<p class="wp-block-paragraph">Plus de remonté de la température ni du pluviomètre ou du détecteur de pluie. J&rsquo;ai donc décider de passer sur un NodeMCU.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="640" height="427" src="https://domo.easter.fr/wp-content/uploads/2019/09/640px-NodeMCU_DEVKIT_1.0.jpg" alt="" class="wp-image-215" srcset="https://domo.easter.fr/wp-content/uploads/2019/09/640px-NodeMCU_DEVKIT_1.0.jpg 640w, https://domo.easter.fr/wp-content/uploads/2019/09/640px-NodeMCU_DEVKIT_1.0-300x200.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" /><figcaption>Merci <a href="https://fr.wikipedia.org/wiki/NodeMCU">Wikipedia </a>pour l&rsquo;image</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">J&rsquo;ai un NodeMCU pour gérer le pluviomètre et le détecteur de pluie, je verrais pour la sonde de température DS18B20 plus tard.</p>
+
+
+
+<p class="wp-block-paragraph">Le câblage :</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="951" height="531" src="https://domo.easter.fr/wp-content/uploads/2019/09/Untitled-Sketch-2_bb.png" alt="" class="wp-image-219" srcset="https://domo.easter.fr/wp-content/uploads/2019/09/Untitled-Sketch-2_bb.png 951w, https://domo.easter.fr/wp-content/uploads/2019/09/Untitled-Sketch-2_bb-300x168.png 300w, https://domo.easter.fr/wp-content/uploads/2019/09/Untitled-Sketch-2_bb-768x429.png 768w" sizes="(max-width: 951px) 100vw, 951px" /></figure>
+
+
+
+<p class="wp-block-paragraph">Le code :</p>
+
+
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »nodemcu/pluvio.ino » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+
+
+
+<p class="wp-block-paragraph">Pour le code, il faut modifier les lignes 4 et 5 pour configurer le Wifi.</p>
+
+
+
+<p class="wp-block-paragraph">Et modifier les lignes 50 et 67 pour mettre l&rsquo;adresse ip et le port de Domoticz ainsi que l&rsquo;IDX du dummy.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2019/09/02/pluviometre/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:55:59 by W3 Total Cache
+-->

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" 
+	>
+<channel>
+	<title>
+	Commentaires sur : Script de surveillance de capteurs	</title>
+	<atom:link href="https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Thu, 18 Apr 2019 07:23:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>
+		Par : Puzzle 3D		</title>
+		<link>https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comment-218</link>
+
+		<dc:creator><![CDATA[Puzzle 3D]]></dc:creator>
+		<pubDate>Thu, 18 Apr 2019 07:23:59 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=203#comment-218</guid>
+
+					<description><![CDATA[Bonjour,
+Script parfait pur combler ce manque d&#039;info quand un capteur ne répond plus !
+Ça sauve la mise et ce devrait être natif sur domoticz à mon avis.]]></description>
+			<content:encoded><![CDATA[<p>Bonjour,<br />
+Script parfait pur combler ce manque d&rsquo;info quand un capteur ne répond plus !<br />
+Ça sauve la mise et ce devrait être natif sur domoticz à mon avis.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : simon		</title>
+		<link>https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comment-207</link>
+
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 04 Mar 2019 10:23:39 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=203#comment-207</guid>
+
+					<description><![CDATA[En réponse à &lt;a href=&quot;https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comment-206&quot;&gt;pim&lt;/a&gt;.
+
+Normalement le script se lance toutes les minutes mais ne rentre dans la première boucles que si la première condition de l&#039;heure est rempli :
+if date.hour==18 and date.min==30 then
+
+Ici à 18h30 et ne doit envoyer les notifications qu&#039;à ce moment là aussi.
+Peux-tu me copier coller ton script ?]]></description>
+			<content:encoded><![CDATA[<p>En réponse à <a href="https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comment-206">pim</a>.</p>
+<p>Normalement le script se lance toutes les minutes mais ne rentre dans la première boucles que si la première condition de l&rsquo;heure est rempli :<br />
+if date.hour==18 and date.min==30 then</p>
+<p>Ici à 18h30 et ne doit envoyer les notifications qu&rsquo;à ce moment là aussi.<br />
+Peux-tu me copier coller ton script ?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : pim		</title>
+		<link>https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comment-206</link>
+
+		<dc:creator><![CDATA[pim]]></dc:creator>
+		<pubDate>Sun, 03 Mar 2019 19:48:40 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=203#comment-206</guid>
+
+					<description><![CDATA[Salut
+J&#039;ai installé le script et aujourd&#039;hui j&#039;ai un sensor qui ne répondait plus. J&#039;ai reçu alors une notification par minute jusqu&#039;à ce que je change la pile. Est ce qu&#039;on ne pourrait pas modifier le script pour avoir une seule et unique notification ?
+Merci]]></description>
+			<content:encoded><![CDATA[<p>Salut<br />
+J&rsquo;ai installé le script et aujourd&rsquo;hui j&rsquo;ai un sensor qui ne répondait plus. J&rsquo;ai reçu alors une notification par minute jusqu&rsquo;à ce que je change la pile. Est ce qu&rsquo;on ne pourrait pas modifier le script pour avoir une seule et unique notification ?<br />
+Merci</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : simon		</title>
+		<link>https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comment-199</link>
+
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 21 Jan 2019 09:57:12 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=203#comment-199</guid>
+
+					<description><![CDATA[En réponse à &lt;a href=&quot;https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comment-198&quot;&gt;Seb&lt;/a&gt;.
+
+En fait tout les scripts tournent tous les temps, seul la condition spécifiée ligne 25 fait qu&#039;il rentre dans le check des batteries.
+Si tu ne veux plus voir l&#039;affiche de &quot;Status: LUA: [Check_Sensor_Battery] Checking for last sensor updates&quot;
+il te faut commenter ou supprimer la ligne 12:
+print(&quot;[Check_Sensor_Battery] Checking for last sensor updates&quot;)
+
+Ou la déplacer après la ligne 25 justement pour qu&#039;elle ne soit affichée que quand le script tourne réellement.]]></description>
+			<content:encoded><![CDATA[<p>En réponse à <a href="https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comment-198">Seb</a>.</p>
+<p>En fait tout les scripts tournent tous les temps, seul la condition spécifiée ligne 25 fait qu&rsquo;il rentre dans le check des batteries.<br />
+Si tu ne veux plus voir l&rsquo;affiche de « Status: LUA: [Check_Sensor_Battery] Checking for last sensor updates »<br />
+il te faut commenter ou supprimer la ligne 12:<br />
+print(« [Check_Sensor_Battery] Checking for last sensor updates »)</p>
+<p>Ou la déplacer après la ligne 25 justement pour qu&rsquo;elle ne soit affichée que quand le script tourne réellement.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : Seb		</title>
+		<link>https://domo.easter.fr/2018/09/08/script-de-surveillance-de-capteurs/#comment-198</link>
+
+		<dc:creator><![CDATA[Seb]]></dc:creator>
+		<pubDate>Sun, 20 Jan 2019 20:59:57 +0000</pubDate>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=203#comment-198</guid>
+
+					<description><![CDATA[Bonjour
+Je viens d&#039;installer le script mais c&#039;est normal que le script remplit le log toutes les 5 à 10 seccondes ?
+Status: LUA: [Check_Sensor_Battery] Checking for last sensor updates
+Ce n&#039;est pas censé se déclencher seulement une fois par jour ?]]></description>
+			<content:encoded><![CDATA[<p>Bonjour<br />
+Je viens d&rsquo;installer le script mais c&rsquo;est normal que le script remplit le log toutes les 5 à 10 seccondes ?<br />
+Status: LUA: [Check_Sensor_Battery] Checking for last sensor updates<br />
+Ce n&rsquo;est pas censé se déclencher seulement une fois par jour ?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:56:43 by W3 Total Cache
+-->

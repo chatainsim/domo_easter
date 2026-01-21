@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" >
+
+<channel>
+	<title>z-wave &#8211; Easter&#039;s Domo</title>
+	<atom:link href="https://domo.easter.fr/category/z-wave/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Fri, 07 Sep 2018 22:08:03 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>Détection de pluie et pluviomètre</title>
+		<link>https://domo.easter.fr/2018/09/08/detection-de-pluie-et-pluviometre/</link>
+					<comments>https://domo.easter.fr/2018/09/08/detection-de-pluie-et-pluviometre/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 07 Sep 2018 22:08:03 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[z-wave]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=187</guid>
+
+					<description><![CDATA[J&#8217;ai cherché pour avoir une notification lorsqu&#8217;il pleut et pourquoi pas avoir la pluviométrie mais je n&#8217;ai rien trouvé qui correspondait à mes attentes. Les modèles en RF433 Mhz semblent bien mais mon RFLink ne fonctionne pas très bien faute de temps pour corriger mon problème d&#8217;antenne. J&#8217;ai bien trouvé un pluviomètre en Z-wave chez [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>J&rsquo;ai cherché pour avoir une notification lorsqu&rsquo;il pleut et pourquoi pas avoir la pluviométrie mais je n&rsquo;ai rien trouvé qui correspondait à mes attentes.</p>
+<p>Les modèles en RF433 Mhz semblent bien mais mon RFLink ne fonctionne pas très bien faute de temps pour corriger mon problème d&rsquo;antenne.</p>
+<p>J&rsquo;ai bien trouvé un pluviomètre en Z-wave chez Popp mais il a quelques limitation.</p>
+<p>J&rsquo;ai fini par faire ma propre tambouille avec <a href="https://amzn.to/2M7Kuye">un détecteur universelle de chez Fibaro</a>, <a href="https://www.lextronic.fr/temperature-meteo/27641-capteur-pluviometre.html">un pluviomètre</a>, <a href="https://amzn.to/2NUgqaU">un détecteur de pluie</a>, <a href="https://amzn.to/2NWUtYN">une alimentation 12v</a>, <a href="https://amzn.to/2wVpk1m">des connecteurs Wago</a> et <a href="https://www.lextronic.fr/boitiers-etanches/22394-boitier-etanche-avec-3-presses-etoupes.html?search_query=OB12&amp;fast_search=fs">un boitier étanche</a>.</p>
+<p>J&rsquo;ai aussi raccordé une <a href="https://amzn.to/2O02kET">sonde DS18B20</a> histoire d&rsquo;avoir la température en plus.</p>
+<p>Le détecteur universelle de Fibaro permet de connecter des contacts sec en entrée, nous n&rsquo;utiliserons pas les sorties.</p>
+<p>Le principe est simple, pour le détecteur de pluie a chaque fois que le capteur reçoit de la pluie, il active un contact sec, il s&rsquo;agit de la même chose pour le pluviomètre, à chaque fois que le godet bascule, il active un contact sec.</p>
+<p>Voici le câblage :</p>
+<p><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-192" src="https://domo.easter.fr/wp-content/uploads/2018/09/pluvio_fibaro-e1536356822208.png" alt="" width="659" height="387" srcset="https://domo.easter.fr/wp-content/uploads/2018/09/pluvio_fibaro-e1536356822208.png 659w, https://domo.easter.fr/wp-content/uploads/2018/09/pluvio_fibaro-e1536356822208-300x176.png 300w" sizes="(max-width: 659px) 100vw, 659px" /></p>
+<p>Je n&rsquo;ai pas inclus la sonde DS18B20 pour ne pas surchargé le dessin.</p>
+<p>Et enfin, inclusion dans Domoticz en appuyant 3 fois rapidement sur le bouton B du détecteur universelle.</p>
+<p>Nous avons maintenant deux nouveaux interrupteurs dans Domoticz, un pour la détecteur de pluie et l&rsquo;autre pour le pluviomètre.</p>
+<p>Il faut maintenant modifier le type de contact du module Z-Wave.</p>
+<p>Pour cela, il faut aller dans Réglages -&gt; Matériel. Puis cliquer sur Réglages de votre adaptateur Z-Wave :</p>
+<p><img decoding="async" class="alignnone size-full wp-image-193" src="https://domo.easter.fr/wp-content/uploads/2018/09/reglages_zwave.png" alt="" width="276" height="42" /></p>
+<p>Puis sélectionner le module FGBS001 et modifier les paramètres 3 et 4 en Input NO (Normal Open) :</p>
+<p><img decoding="async" class="alignnone size-full wp-image-194" src="https://domo.easter.fr/wp-content/uploads/2018/09/no.png" alt="" width="253" height="167" /></p>
+<p>Pour le détecteur de pluie, rien à faire de particulier si ce n&rsquo;est activer les notifications quand il passe à ON.</p>
+<p>Pour le pluviomètre, nous n&rsquo;avons qu&rsquo;un simple interrupteur qui passe à ON à chaque bascule du godet, il faut maintenant que cette bascule se transforme en mm de pluie.</p>
+<p>Il faut donc créer un capteur virtuel dans un Matériel de type Dummy :</p>
+<p><img decoding="async" class="alignnone size-full wp-image-196" src="https://domo.easter.fr/wp-content/uploads/2018/09/virtual_dummy.png" alt="" width="638" height="37" srcset="https://domo.easter.fr/wp-content/uploads/2018/09/virtual_dummy.png 638w, https://domo.easter.fr/wp-content/uploads/2018/09/virtual_dummy-300x17.png 300w" sizes="(max-width: 638px) 100vw, 638px" /></p>
+<p>Et choisir Type de capteur : Précipitations</p>
+<p><img decoding="async" class="alignnone size-full wp-image-197" src="https://domo.easter.fr/wp-content/uploads/2018/09/precipit.png" alt="" width="425" height="247" srcset="https://domo.easter.fr/wp-content/uploads/2018/09/precipit.png 425w, https://domo.easter.fr/wp-content/uploads/2018/09/precipit-300x174.png 300w" sizes="(max-width: 425px) 100vw, 425px" /></p>
+<p>Puis créer un nouveau script de type DzVents / Device en modifiant la ligne 4 et la ligne 12 avec le nom de votre interrupteur créer par le détecteur universelle.</p>
+<p>Ainsi que la ligne 11 avec le non de votre capteur virtuel.</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »rainfall.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Si vous n&rsquo;utilisez pas le même pluviomètre que moi, il faut modifier la valeur ligne 13 avec la valeur du godet.</p>
+<p>Et voilà <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/09/08/detection-de-pluie-et-pluviometre/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Avoir une notification lorsque le lave-linge a terminé</title>
+		<link>https://domo.easter.fr/2018/05/11/avoir-une-notification-lorsque-le-lave-linge-a-termine/</link>
+					<comments>https://domo.easter.fr/2018/05/11/avoir-une-notification-lorsque-le-lave-linge-a-termine/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 11 May 2018 13:46:24 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[z-wave]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=176</guid>
+
+					<description><![CDATA[Il s&#8217;agit en gros d&#8217;une traduction de cet article : https://www.gadget-freakz.com/2018/05/script-your-dryver-or-washingmachine/ Pour utiliser ce script, il faut avoir une prise connectée qui remonte la consommation en temps réel. J&#8217;utilise la même prise que Gadget-freaks, la Neo Coolcam que l&#8217;on trouve à bas prix chez Gearbest : https://gearbest.com/home-gadgets/pp_581312.html?lkid=13669905 (lien sponsorisé de Gadget-Freakz) Il faut dans un [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Il s&rsquo;agit en gros d&rsquo;une traduction de cet article : <a href="https://www.gadget-freakz.com/2018/05/script-your-dryver-or-washingmachine/" target="_blank" rel="noopener">https://www.gadget-freakz.com/2018/05/script-your-dryver-or-washingmachine/</a></p>
+<p>Pour utiliser ce script, il faut avoir une prise connectée qui remonte la consommation en temps réel.</p>
+<p>J&rsquo;utilise la même prise que Gadget-freaks, la Neo Coolcam que l&rsquo;on trouve à bas prix chez Gearbest : <a href="https://gearbest.com/home-gadgets/pp_581312.html?lkid=13669905" target="_blank" rel="noopener">https://gearbest.com/home-gadgets/pp_581312.html?lkid=13669905 </a>(lien sponsorisé de Gadget-Freakz)</p>
+<p><img decoding="async" class="alignnone size-full wp-image-178" src="https://domo.easter.fr/wp-content/uploads/2018/05/1522168677121294204.jpg" alt="" width="100" height="100" /></p>
+<p>Il faut dans un premier temps créer deux variables utilisateur :</p>
+<p>washingmachine_status &amp; washingmachine_counter au format Interger avec zéro comme valeur lors de la création.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-177" src="https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu.png" alt="" width="1168" height="73" srcset="https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu.png 1168w, https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu-300x19.png 300w, https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu-768x48.png 768w, https://domo.easter.fr/wp-content/uploads/2018/05/washmachine_vu-1024x64.png 1024w" sizes="(max-width: 1168px) 100vw, 1168px" /></p>
+<p>Et créer le script en question au format lua (Lua/Time) :</p>
+<p>En changeant le nom de votre prise connectée :</p>
+<p><span class="pl-k">local</span> energy_consumption <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&lsquo;</span><em><strong>Zwave LaveLinge</strong></em><span class="pl-pds">&lsquo;</span></span></p>
+<p>[pastacode lang= »markup » user= »chatainsim » repos= »scripts_domoticz » path_id= »script_time_wasmachine.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Et voilà.</p>
+<p>&nbsp;</p>
+<p>Merci à Gadget-Freakz</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/05/11/avoir-une-notification-lorsque-le-lave-linge-a-termine/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:56:58 by W3 Total Cache
+-->

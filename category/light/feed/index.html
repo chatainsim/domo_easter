@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" >
+
+<channel>
+	<title>light &#8211; Easter&#039;s Domo</title>
+	<atom:link href="https://domo.easter.fr/category/light/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Fri, 11 May 2018 13:47:31 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>Motion v2.2</title>
+		<link>https://domo.easter.fr/2018/04/27/motion-v2-2/</link>
+					<comments>https://domo.easter.fr/2018/04/27/motion-v2-2/#respond</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 27 Apr 2018 08:27:04 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[light]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[xiaomi]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=167</guid>
+
+					<description><![CDATA[Un mini post pour signaler la mise à jour du script Motion (éclairage sur détection de mouvement). J&#8217;ai simplement enlevé la partie extinction avec délai car cela générait des problèmes. A savoir si quelqu&#8217;un repasse devant le détecteur entre la fin de mouvement et l&#8217;extinction de la lampe, elle ne se rallume pas. [pastacode lang= »c » [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Un mini post pour signaler la mise à jour du script Motion (éclairage sur détection de mouvement).</p>
+<p>J&rsquo;ai simplement enlevé la partie extinction avec délai car cela générait des problèmes.</p>
+<p>A savoir si quelqu&rsquo;un repasse devant le détecteur entre la fin de mouvement et l&rsquo;extinction de la lampe, elle ne se rallume pas.</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motionv2.2.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/04/27/motion-v2-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Détecteur de mouvement v2 et v2.1</title>
+		<link>https://domo.easter.fr/2017/11/27/detecteur-de-mouvement-v2/</link>
+					<comments>https://domo.easter.fr/2017/11/27/detecteur-de-mouvement-v2/#respond</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 27 Nov 2017 21:44:16 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[light]]></category>
+		<category><![CDATA[lua]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=110</guid>
+
+					<description><![CDATA[Une petite mise à jour du script de détection de mouvement qui allume une lampe sur détection de mouvement. Le voici : [pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motionv2.lua » revision= » » highlight= » » lines= » » provider= »github »/] Il y a deux différences. La première, je n&#8217;utilise plus timeofday[&#8216;Nighttime&#8216;] car en période d&#8217;hiver, la lampe s&#8217;éclaire faiblement au alentour de 17h du [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img fetchpriority="high" decoding="async" class="alignnone wp-image-64 size-large" src="https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-1024x205.png" alt="" width="812" height="163" srcset="https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-1024x205.png 1024w, https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-300x60.png 300w, https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-768x154.png 768w, https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua.png 1864w" sizes="(max-width: 812px) 100vw, 812px" /></p>
+<p>Une petite mise à jour du <a href="https://domo.easter.fr/2017/06/26/detecteur-de-mouvement-lumiere-et-domoticz/">script de détection de mouvement</a> qui allume une lampe sur détection de mouvement.</p>
+<p>Le voici :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motionv2.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Il y a deux différences. La première, je n&rsquo;utilise plus <em>timeofday[<span class="pl-s"><span class="pl-pds">&lsquo;</span>Nighttime<span class="pl-pds">&lsquo;</span></span>]</em> car en période d&rsquo;hiver, la lampe s&rsquo;éclaire faiblement au alentour de 17h du coup ce n&rsquo;est pas pratique.</p>
+<p>J&rsquo;ai donc définis moi même les heures avec les variables <em>morning</em> et <em>night</em>.</p>
+<p>Du coup la lampe ne s&rsquo;éclaire faiblement qu&rsquo;entre 23h et 5h du matin. A vous de les changer en fonction.</p>
+<p>Deuxième changement, je défini le nom du détecteur de mouvement et de la lampe une seule fois au début du script, comme ça s&rsquo;il change j&rsquo;ai juste à changer le variable <em>motion_sensor</em> et <em>light_bulb</em> en fonction et je n&rsquo;ai pas besoin de reparcourir tout le script.</p>
+<p>EDIT: Voici une v2.1 :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motionv2.1.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>J&rsquo;ai rajouté la variable nolight qui permet de spécifier à partir de quelle heure la lampe ne s&rsquo;allume plus la nuit.</p>
+<p>Dans mon cas, la lampe ne s&rsquo;allume plus entre 1h du matin et 6h.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/11/27/detecteur-de-mouvement-v2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Kodi, lumières, TV et Domoticz</title>
+		<link>https://domo.easter.fr/2017/06/26/kodi-lumieres-tv-et-domoticz/</link>
+					<comments>https://domo.easter.fr/2017/06/26/kodi-lumieres-tv-et-domoticz/#respond</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 26 Jun 2017 14:13:35 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[kodi]]></category>
+		<category><![CDATA[light]]></category>
+		<category><![CDATA[lua]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=70</guid>
+
+					<description><![CDATA[Hop, un petit script lua pour gérer la lumière en fonction de Kodi. Rien de compliqué ici, juste éteindre les lumières lors de la lecture d&#8217;une vidéo (film/série tv). Et n&#8217;en rallumer qu&#8217;une lors de la mise en pause ou de l&#8217;arrêt de la lecture si nous sommes le soir ou la nuit mais pas [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Hop, un petit script lua pour gérer la lumière en fonction de Kodi.</p>
+<p>Rien de compliqué ici, juste éteindre les lumières lors de la lecture d&rsquo;une vidéo (film/série tv).</p>
+<p>Et n&rsquo;en rallumer qu&rsquo;une lors de la mise en pause ou de l&rsquo;arrêt de la lecture si nous sommes le soir ou la nuit mais pas en journée.</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »kodi_light.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Rien de bien sorcier, à adapter en fonction de vos besoin bien entendu.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/06/26/kodi-lumieres-tv-et-domoticz/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Détecteur de mouvement, lumiére, lua et Domoticz</title>
+		<link>https://domo.easter.fr/2017/06/26/detecteur-de-mouvement-lumiere-et-domoticz/</link>
+					<comments>https://domo.easter.fr/2017/06/26/detecteur-de-mouvement-lumiere-et-domoticz/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 26 Jun 2017 12:16:30 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[light]]></category>
+		<category><![CDATA[lua]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=61</guid>
+
+					<description><![CDATA[/!\ Une version v2 est disponible ici mais cette version est toujours valable. Un petit article rapide pour poser un script concernant l&#8217;activation d&#8217;une lampe sur détection de mouvement. [pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motion.lua » revision= » » highlight= » » lines= » » provider= »github »/] Pour faire simple, lors de la détection d&#8217;un mouvement, Domoticz va allumer la lumière. Puis l&#8217;éteindre après [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>/!\ Une version v2 est disponible <a href="https://domo.easter.fr/2017/11/27/detecteur-de-mouvement-v2/">ici</a> mais cette version est toujours valable.</p>
+<p><img decoding="async" class="alignnone size-full wp-image-64" src="https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua.png" alt="" width="1864" height="374" srcset="https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua.png 1864w, https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-300x60.png 300w, https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-768x154.png 768w, https://domo.easter.fr/wp-content/uploads/2017/06/domo_lua-1024x205.png 1024w" sizes="(max-width: 1864px) 100vw, 1864px" /></p>
+<p>Un petit article rapide pour poser un script concernant l&rsquo;activation d&rsquo;une lampe sur détection de mouvement.</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »motion.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Pour faire simple, lors de la détection d&rsquo;un mouvement, Domoticz va allumer la lumière.</p>
+<p>Puis l&rsquo;éteindre après une certain temps sans mouvement.</p>
+<p>&nbsp;</p>
+<p>Tout simplement.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/06/26/detecteur-de-mouvement-lumiere-et-domoticz/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:57:25 by W3 Total Cache
+-->

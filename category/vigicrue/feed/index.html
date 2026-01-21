@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:friends="wordpress-plugin-friends:feed-additions:1" >
+
+<channel>
+	<title>Vigicrue &#8211; Easter&#039;s Domo</title>
+	<atom:link href="https://domo.easter.fr/category/vigicrue/feed/" rel="self" type="application/rss+xml" />
+	<link>https://domo.easter.fr</link>
+	<description>Home Automation Stuff</description>
+	<lastBuildDate>Fri, 30 Nov 2018 13:35:05 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>Vigicrue v3 beta</title>
+		<link>https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/</link>
+					<comments>https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Fri, 12 Jan 2018 22:40:04 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[notification]]></category>
+		<category><![CDATA[Vigicrue]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=143</guid>
+
+					<description><![CDATA[Voici une nouvelle version pour le script Vigicrue. Suite à une demande de balajol sur le forum d&#8217;easydomoticz, j&#8217;ai rajouter la possibilité d&#8217;être notifié. J&#8217;ai fait le test de mettre une notification sur le sensor Domoticz et ça ne semble pas fonctionner. Du coup je l&#8217;ai ajouté dans le script, j&#8217;ai modifié la façon de [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img fetchpriority="high" decoding="async" class="alignnone wp-image-9 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png" alt="" width="983" height="181" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png 983w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-300x55.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-768x141.png 768w" sizes="(max-width: 983px) 100vw, 983px" /></p>
+<p>Voici une nouvelle version pour le script Vigicrue.</p>
+<p>Suite à une demande de <a href="http://easydomoticz.com/forum/memberlist.php?mode=viewprofile&amp;u=794">balajol</a> sur le forum d&rsquo;<a href="http://easydomoticz.com/forum/viewtopic.php?f=17&amp;t=5484&amp;start=10#p46650">easydomoticz</a>, j&rsquo;ai rajouter la possibilité d&rsquo;être notifié.</p>
+<p>J&rsquo;ai fait le test de mettre une notification sur le sensor Domoticz et ça ne semble pas fonctionner.</p>
+<p>Du coup je l&rsquo;ai ajouté dans le script, j&rsquo;ai modifié la façon de le configurer aussi.</p>
+<p>Dans un premier temps, il faut construire le fichier de configuration au format json.</p>
+<p>J&rsquo;ai mis sur github trois fichiers de conf différents pour le moment, <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/vigicrue/conf_samples/vigicrue_1_station.json">un pour une station</a>, <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/vigicrue/conf_samples/vigicrue_2_station.json">un pour deux stations</a> et <a href="https://github.com/chatainsim/scripts_domoticz/blob/master/vigicrue/conf_samples/vigicrue_3_station.json">pour trois stations</a>.</p>
+<p>Si vous voulez une exemple de fichier de conf pour plus de deux stations, je peux vous le faire, demandez moi.</p>
+<p>&nbsp;</p>
+<p>Voici à quoi un fichier de configuration ressemble (je pars sur le deux stations comme c&rsquo;est celui que j&rsquo;utilise) :</p>
+<p>[pastacode lang= »markup » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue/conf_samples/vigicrue_2_station.json » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Il faut mettre le fichier de conf a un endroit accessible par Domoticz, je l&rsquo;ai mis dans <strong>/opt/domoticz/scripts</strong> mais vous pouvez le mettre ailleurs du moment que Domoticz a les droits pour le lire.</p>
+<p>Une précision, dans la partie notification, la valeur <strong>test</strong> ne sert à rien pour l&rsquo;instant mais je compte l&rsquo;utiliser pour choisir le mode de test, plus grand que, plus grand ou equal, plus petit, etc &#8230;</p>
+<p>Dites moi si c&rsquo;est pertinant ou si le plus grand que suffit.</p>
+<p>Dans notification, <strong>value</strong> permet de définir le seuil, par exemple si le niveau d&rsquo;eau dépasse 2 métres ou 500 m3/s et <strong>active</strong> pour activer ou non la notification (true ou false).</p>
+<p>&nbsp;</p>
+<p>Voici le script lua, catégorie lua -&gt; time :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue/vigicrue.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Les modifications a apporter au script sont les quatre premières variables, à savoir :</p>
+<p><strong>debug</strong> : Pour activer le mode debug qui affiche plus d&rsquo;info (pas encore optimisé pour la v3)</p>
+<p><strong>config</strong> : Emplacement de votre fichier json de configuration</p>
+<p><strong>json</strong> : Emplacement de votre fichier JSON.lua</p>
+<p><strong>curl</strong> : Chemin complet vers votre binaire curl</p>
+<p>&nbsp;</p>
+<p>Pour le moment il faut modifier les commandes de notification manuellement :</p>
+<p>[pastacode lang= »c » manual= »commandArray%5B&rsquo;SendNotification&rsquo;%5D%3D&rsquo;Water%20level%20is%20high%20for%20station%20&prime;..StationName..&rsquo;%23Current%20level%20is%20&prime;..ResultHeight%5B%23ResultHeight%5D%5B2%5D..&rsquo;m%20for%20&prime;..StationName..&rsquo;%230%23sound%23extradata%23telegram&rsquo;%0AcommandArray%5B&rsquo;SendNotification&rsquo;%5D%3D&rsquo;Water%20speed%20level%20is%20high%20for%20station%20&prime;..StationName..&rsquo;%23Current%20speed%20level%3A%20&prime;..ResultSpeed%5B%23ResultSpeed%5D%5B2%5D..&rsquo;m3%2Fs%20for%20&prime;..StationName..&rsquo;%230%23sound%23extradata%23telegram' » message= » » highlight= » » provider= »manual »/]</p>
+<p>Pour définir le type de notification, ici j&rsquo;utilise telegram.</p>
+<p>Mais je compte rajouter ça dans le fichier de conf prochainement.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/feed/</wfw:commentRss>
+			<slash:comments>17</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Vigicrue V2</title>
+		<link>https://domo.easter.fr/2017/12/11/vigicrue-v2/</link>
+					<comments>https://domo.easter.fr/2017/12/11/vigicrue-v2/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Mon, 11 Dec 2017 13:06:25 +0000</pubDate>
+				<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[lua]]></category>
+		<category><![CDATA[Vigicrue]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=128</guid>
+
+					<description><![CDATA[Une v3 viens de sortir, ici. Le site de Vigicrue a changé. Maintenant il utilise du json pour les données. Un changement qui permet de simplifier tout ça en un seul script lua directement dans Domoticz : [pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue2.lua » revision= » » highlight= » » lines= » » provider= »github »/] Il suffit de modifier le début du script pour [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Une v3 viens de sortir, <a href="https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/">ici</a>.</p>
+<p>Le site de Vigicrue a changé. Maintenant il utilise du json pour les données.</p>
+<p>Un changement qui permet de simplifier tout ça en un seul script lua directement dans Domoticz :</p>
+<p>[pastacode lang= »c » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrue2.lua » revision= » » highlight= » » lines= » » provider= »github »/]</p>
+<p>Il suffit de modifier le début du script pour ajouter les ID des stations (<a href="https://domo.easter.fr/2017/02/09/vigicrue-et-domoticz/">je vous renvoi sur cette article pour trouver les IDs</a>).</p>
+<p>Les variables SIDXHeight et SIDXSpeed permettent de définir les IDX des sensors Domoticz et sont des tableaux.</p>
+<p>La clé correspond à l&rsquo;ID de la station et la valeur à l&rsquo;IDX Domoticz.</p>
+<p>Il faut aussi vérifier l&#8217;emplacement de votre fichier JSON.lua qui n&rsquo;est pas forcement dans /opt/domoticz/scripts/lua.</p>
+<p>Amusez-vous bien.</p>
+<p>[EDIT] J&rsquo;ai rajouté une vérification dans le cas ou Vigicrue ne retourne pas de données pour ne pas sortir une erreur dans les logs.</p>
+<p>Merci à <span class="responsive-hide"><a href="https://easydomoticz.com/forum/viewtopic.php?f=17&amp;t=5484&amp;p=46325"><strong>lamouette </strong></a>sur le forum d&rsquo;easydomoticz de m&rsquo;avoir remonter ce cas.</span></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/12/11/vigicrue-v2/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+		<item>
+		<title>Vigicrue et Domoticz</title>
+		<link>https://domo.easter.fr/2017/02/09/vigicrue-et-domoticz/</link>
+					<comments>https://domo.easter.fr/2017/02/09/vigicrue-et-domoticz/#comments</comments>
+		
+		<dc:creator><![CDATA[simon]]></dc:creator>
+		<pubDate>Thu, 09 Feb 2017 09:44:53 +0000</pubDate>
+				<category><![CDATA[bash]]></category>
+		<category><![CDATA[Domoticz]]></category>
+		<category><![CDATA[Vigicrue]]></category>
+		<guid isPermaLink="false">https://domo.easter.fr/?p=6</guid>
+
+					<description><![CDATA[/!\ Le site Vigicrue a changé, il faut maintenant utiliser le script v2 de Vigicrue ici. Ou la v3 ici. Comment remonter dans Domoticz la hauteur d&#8217;eau ainsi que le débit d&#8217;un cours d&#8217;eau depuis le site Vigicrues. Dans un premier temps, il faut créer un Hardware virtuel. Pour ce faire, il faut se rendre dans [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>/!\ Le site Vigicrue a changé, il faut maintenant utiliser le script<a href="https://domo.easter.fr/2017/12/11/vigicrue-v2/"> v2 de Vigicrue ici</a>. Ou la v3 <a href="https://domo.easter.fr/2018/01/12/vigicrue-v3-beta/">ici</a>.</p>
+<p>Comment remonter dans Domoticz la hauteur d&rsquo;eau ainsi que le débit d&rsquo;un cours d&rsquo;eau depuis le site <a href="https://www.vigicrues.gouv.fr/">Vigicrues</a>.</p>
+<p><img decoding="async" class="wp-image-9 aligncenter" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png" width="602" height="111" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture.png 983w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-300x55.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture-768x141.png 768w" sizes="(max-width: 602px) 100vw, 602px" /></p>
+<p><img decoding="async" class="wp-image-12 size-large aligncenter" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture1-1024x605.png" width="600" height="354" /></p>
+<p>Dans un premier temps, il faut créer un Hardware virtuel.</p>
+<p>Pour ce faire, il faut se rendre dans Setup -&gt; Hardware.</p>
+<p>Puis ajouter un hardware de type « Dummy » :<img decoding="async" class="aligncenter wp-image-20 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy-1.png" width="941" height="253" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy-1.png 941w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy-1-300x81.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy-1-768x206.png 768w" sizes="(max-width: 941px) 100vw, 941px" /><br />
+Puis créer deux sensors en cliquant sur Create Virtual Sensors :<img decoding="async" class="wp-image-21 aligncenter" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi.png" width="690" height="23" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi.png 1461w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi-300x10.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi-768x25.png 768w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_capture_dummy_vigi-1024x34.png 1024w" sizes="(max-width: 690px) 100vw, 690px" />Le premier pour la hauteur d&rsquo;eau et le deuxième pour le débit d&rsquo;eau :<img decoding="async" class="alignnone size-medium wp-image-22" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_debeau-300x175.png" alt="" width="300" height="175" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_debeau-300x175.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_debeau.png 532w" sizes="(max-width: 300px) 100vw, 300px" /> <img decoding="async" class="alignnone size-medium wp-image-23" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_niveau-300x175.png" alt="" width="300" height="175" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_niveau-300x175.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_niveau.png 528w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Ensuite il faut aller dans Setup -&gt; Devices pour récupérer les idx des deux sensors virtuels créer précédemment et les noter dans un coin (ici 215 et 216) :<img decoding="async" class="alignright wp-image-24 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx.png" width="1156" height="101" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx.png 1156w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx-300x26.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx-768x67.png 768w, https://domo.easter.fr/wp-content/uploads/2017/02/domo_idx-1024x89.png 1024w" sizes="(max-width: 1156px) 100vw, 1156px" /></p>
+<p>Avant de se lancer dans la création du script qui va récupérer les valeurs et mettre à jour Domoticz, il faut récupérer les infos sur la station voulu.</p>
+<p>Pour cela, un petit tour sur le site Vigicrues : <a href="https://www.vigicrues.gouv.fr/">https://www.vigicrues.gouv.fr/</a></p>
+<p>Un petit clique sur la carte à l’endroit voulu pour zoomer  :</p>
+<p><img decoding="async" class="alignnone size-medium wp-image-30" src="https://domo.easter.fr/wp-content/uploads/2017/02/carte_vigi-300x300.png" alt="" width="300" height="300" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/carte_vigi-300x300.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/carte_vigi-150x150.png 150w, https://domo.easter.fr/wp-content/uploads/2017/02/carte_vigi.png 683w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Et cliquer sur la station voulu :</p>
+<p><img decoding="async" class="alignnone size-medium wp-image-31" src="https://domo.easter.fr/wp-content/uploads/2017/02/vigi_detail-300x235.png" alt="" width="300" height="235" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/vigi_detail-300x235.png 300w, https://domo.easter.fr/wp-content/uploads/2017/02/vigi_detail.png 477w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Il faut récupérer l&rsquo;id de la station dans l&rsquo;url (ici <strong>W141001001</strong>) :<img decoding="async" class="alignnone wp-image-32 size-full" src="https://domo.easter.fr/wp-content/uploads/2017/02/url_vigi.png" width="756" height="49" srcset="https://domo.easter.fr/wp-content/uploads/2017/02/url_vigi.png 756w, https://domo.easter.fr/wp-content/uploads/2017/02/url_vigi-300x19.png 300w" sizes="(max-width: 756px) 100vw, 756px" /></p>
+<p>Vous devez maintenant créer sur votre serveur un script bash pour récupérer les infos puis mettre à jour Domoticz.</p>
+<p>[pastacode lang= »bash » user= »chatainsim » repos= »scripts_domoticz » path_id= »vigicrues.sh » revision= »master » highlight= » » lines= » » provider= »github »/]</p>
+<p>On remplace l&rsquo;adresse du serveur Domoticz, l&rsquo;id de la station ainsi que les idx des deux sensors virtuels et hop le tour est joué.</p>
+<p>Et hop, on l&rsquo;ajoute dans la crontab pour qu&rsquo;il soit lancé régulièrement.</p>
+<p>Personnellement il tourne toutes les demi-heures, à XXh01 et XXh31.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://domo.easter.fr/2017/02/09/vigicrue-et-domoticz/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+		<friends:post-format>standard</friends:post-format>
+	</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Mise en cache de page à l’aide de Disk: Enhanced (Page is feed) 
+
+Served from: domo.easter.fr @ 2026-01-21 12:57:48 by W3 Total Cache
+-->
